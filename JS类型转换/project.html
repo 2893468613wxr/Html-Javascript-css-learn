@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS类型转换</title>
+</head>
+<body>
+    <h1>JS类型转换</h1>
+    <p>JavaScript 类型转换是指将一种数据类型转换为另一种数据类型。</p>
+    <p>JavaScript 类型转换有以下几种：</p>
+    <ul>
+        <li>String(字符串)</li>
+        <li>Number(数字)</li>
+        <li>Boolean(布尔值)</li>
+        <li>Array(数组)</li>
+        <li>Object(对象)</li>
+        <li>Function(函数)</li>
+    </ul>
+    <p>以下是 JavaScript 类型转换的示例：</p>
+    <h2>String(字符串)</h2>
+    <p>将数字转换为字符串：</p>
+    <pre>
+        var num = 10;
+        var str = num.toString();
+        console.log(str); // "10"
+    </pre>
+    <p>将布尔值转换为字符串：</p>
+    <pre>
+        var bool = true;
+        var str = bool.toString();
+        console.log(str); // "true"
+    </pre>
+    <p>将数组转换为字符串：</p>
+    <pre>
+        var arr = [1, 2, 3];
+        var str = arr.toString();
+        console.log(str); // "1,2,3"
+    </pre>
+    <p>将对象转换为字符串：</p>
+    <pre>
+        var obj = {name: "John", age: 30};
+        var str = obj.toString();
+        console.log(str); // "[object Object]"
+    </pre>
+    <p>将函数转换为字符串：</p>
+    <pre>
+        function myFunction() {
+            console.log("Hello World!");
+        }
+        var str = myFunction.toString();
+        console.log(str); // "function myFunction() { console.log("Hello World!"); }"
+    </pre>
+    <h2>Number(数字)</h2>
+    <p>将字符串转换为数字：</p>
+    <pre>
+        var str = "10";
+        var num = Number(str);
+        console.log(num); // 10
+    </pre>
+    <p>将布尔值转换为数字：</p>
+    <pre>
+        var bool = true;
+        var num = Number(bool);
+        console.log(num); // 1
+    </pre>
+    <p>将数组转换为数字：</p>
+    <pre>
+        var arr = [1, 2, 3];
+        var num = Number(arr);
+        console.log(num); // NaN
+    </pre>
+    <p>将对象转换为数字：</p>
+    <pre>
+        var obj = {name: "John", age: 30};
+        var num = Number(obj);
+        console.log(num); // NaN
+    </pre>
+    <p>将函数转换为数字：</p>
+    <pre>
+        function myFunction() {
+            console.log("Hello World!");
+        }
+        var num = Number(myFunction);
+        console.log(num); // NaN
+    </pre>
+    <h2>Boolean(布尔值)</h2>
+    <p>将字符串转换为布尔值：</p>
+    <pre>
+        var str = "true";
+        var bool = Boolean(str);
+        console.log(bool); // true
+    </pre>
+    <p>将数字转换为布尔值：</p>
+    <pre>
+        var num = 10;
+        var bool = Boolean(num);
+        console.log(bool); // true
+    </pre>
+    <p>将数组转换为布尔值：</p>
+    <pre>
+        var arr = [1, 2, 3];
+        var bool = Boolean(arr);
+        console.log(bool); // true
+    </pre>
+    <p>将对象转换为布尔值：</p>
+    <pre>
+        var obj = {name: "John", age: 30};
+        var bool = Boolean(obj);
+        console.log(bool); // true
+    </pre>
+    <p>将函数转换为布尔值：</p>
+    <pre>
+        function myFunction() {
+            console.log("Hello World!");
+        }
+        var bool = Boolean(myFunction);
+        console.log(bool); // true
+    </pre>
+    <h2>Array(数组)</h2>
+    <p>将字符串转换为数组：</p>
+    <pre>
+        var str = "1,2,3";
+        var arr = str.split(",");
+        console.log(arr); // ["1", "2", "3"]
+    </pre>
+    <p>将数字转换为数组：</p>
+    <pre>
+        var num = 10;
+        var arr = [num];
+        console.log(arr); // [10]
+    </pre>
+    <p>将布尔值转换为数组：</p>
+    <pre>
+        var bool = true;
+        var arr = [bool];
+        console.log(arr); // [true]
+    </pre>
+    <p>将对象转换为数组：</p>
+    <pre>
+        var obj = {name: "John", age: 30};
+        var arr = [obj];
+        console.log(arr); // [{name: "John", age: 30}]
+    </pre>
+    <p>将函数转换为数组：</p>
+    <pre>
+        function myFunction() {
+            console.log("Hello World!");
+        }
+        var arr = [myFunction];
+        console.log(arr); // [function myFunction() { console.log("Hello World!"); }]
+    </pre>
+    <h2>Object(对象)</h2>
+    <p>将字符串转换为对象：</p>
+    <pre>
+        var str = "name=John&age=30";
+        var obj = {};
+        var arr = str.split("&");
+        for (var i = 0; i < arr.length; i++) {
+            var temp = arr[i].split("=");
+            obj[temp[0]] = temp[1];
+        }
+        console.log(obj); // {name: "John", age: "30"}
+    </pre>
+    <p>将数字转换为对象：</p>
+    <pre>
+        var num = 10;
+        var obj = {num: num};
+        console.log(obj); // {num: 10}
+    </pre>
+    <p>将布尔值转换为对象：</p>
+    <pre>
+        var bool = true;
+        var obj = {bool: bool};
+        console.log(obj); // {bool: true}
+    </pre>
+    <p>将数组转换为对象：</p>
+    <pre>
+        var arr = [1, 2, 3];
+        var obj = {arr: arr};
+        console.log(obj); // {arr: Array(3)}
+    </pre>
+    <p>将函数转换为对象：</p>
+    <pre>
+        function myFunction() {
+            console.log("Hello World!");
+        }
+        var obj = {myFunction: myFunction};
+        console.log(obj); // {myFunction: function myFunction() { console.log("Hello World!"); }}
+    </pre>
+    <h2>Function(函数)</h2>
+    <p>将字符串转换为函数：</p>
+    <pre>
+        var str = "function myFunction() { console.log('Hello World!'); }";
+        var func = new Function(str);
+        func(); // "Hello World!"
+    </pre>
+    <p>将数字转换为函数：</p>
+    <pre>
+        var num = 10;
+        var func = new Function("num", "console.log(num)");
+        func(num); // 10
+    </pre>
+    <p>将布尔值转换为函数：</p>
+    <pre>
+        var bool = true;
+        var func = new Function("bool", "console.log(bool)");
+        func(bool); // true
+    </pre>
+    <p>将数组转换为函数：</p>
+    <pre>
+        var arr = [1, 2, 3];
+        var func = new Function("arr", "console.log(arr)");
+        func(arr); // [1, 2, 3]
+    </pre>
+    <p>将对象转换为函数：</p>
+    <pre>
+        var obj = {name: "John", age: 30};
+        var func = new Function("obj", "console.log(obj)");
+        func(obj); // {name: "John", age: 30}
+    </pre>
+    <p>将函数转换为函数：</p>
+    <pre>
+        function myFunction() {
+            console.log("Hello World!");
+        }
+        var func = new Function("func", "func()");
+        func(myFunction); // "Hello World!"
+    </pre>
+</body>
+</html>
+  

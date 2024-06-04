@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form action="submit.php" method="post" name="myForm" target="_blank">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" title="请输入用户名"  placeholder="Please enter your name"  required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" title="请输入邮箱地址" placeholder="Please enter your email"  required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" size="40" clowd="20" rown="20" name="password" title="请输入密码" placeholder="Please enter your password"  required><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" title="请选择性别" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" title="请选择性别" required>
+        <label for="female">Female</label><br><br>
+        <label for="interests">Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests[]" value="sports" title="请选择兴趣" required>
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests[]" value="music" title="请选择兴趣" required>
+        <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interests[]" value="reading" title="请选择兴趣" required>
+        <label for="reading">Reading</label><br><br>
+        <label for="message">Message:</label><br>
+
+        <!-- 多行文本框 --> 
+        <textarea id="message" name="message" rows="4" cols="50" title="请输入留言"  placeholder="Please enter your message"  required></textarea><br><br> 
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <script>
+        // 表单验证
+        var form = document.querySelector('form');
+        var name = document.querySelector('#name');
+        var email = document.querySelector('#email');
+        var password = document.querySelector('#password');
+        var gender = document.querySelector('input[name="gender"]:checked');
+        var interests = document.querySelectorAll('input[name="interests[]"]:checked');
+        var message = document.querySelector('#message');
+
+        form.addEventListener('submit', function(event) {
+            if (!name.value) {
+                alert('Please enter your name.');
+                event.preventDefault();
+            }
+            if (!email.value) {
+                alert('Please enter your email.');
+                event.preventDefault();
+            }
+            if (!password.value) {
+                alert('Please enter your password.');
+                event.preventDefault();
+            }
+            if (!gender) {
+                alert('Please select your gender.');
+                event.preventDefault();
+            }
+            if (interests.length === 0) {
+                alert('Please select at least one interest.');
+                event.preventDefault();
+            }
+            if (!message.value) {
+                alert('Please enter your message.');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

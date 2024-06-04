@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meat charset="UTF-8">
+        <title>Hello World</title>
+    </meat>
+    <script>
+        window.onload = function() {
+            alert("欢迎光临小店!");
+        }
+        window.onbeforeunload = function(event) {
+            var e = event || window.event;
+            // 兼容IE和Firefox，部分浏览器无法支持自定义信息
+            e.returnValue = "记得下次再来哦！";
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

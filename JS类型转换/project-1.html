@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS类型转换</title>
+    </head>
+    <body>
+        <div id="output"></div>
+        <script>    
+            var oldconsolelog = console.log;
+
+            console.log = function(msg){
+            if (typeof message == 'object') {
+                document.getElementById("output").innerHTML += (JSON && JSON.stringify? JSON.stringify(message) : message) + "<br>";
+            } else {
+                document.getElementById("output").innerHTML += msg + "<br>";
+            }
+
+            //保留原始的console.log函数的行为
+            oldconsolelog.apply(console, arguments);
+        }
+
+            // 字符串转数字
+            var strNum = "123";
+            var num = Number(strNum);
+            console.log(num); // 123
+
+            // 数字转字符串
+            var numStr = 123;
+            var str = String(numStr);
+            console.log(str); // "123"
+
+            // 布尔值转数字
+            var bool = true;
+            var numBool = Number(bool);
+            console.log(numBool); // 1
+
+            // 数字转布尔值
+            var numBool2 = 0;
+            var bool2 = Boolean(numBool2);
+            console.log(bool2); // false
+
+            // 字符串转布尔值
+            var strBool = "false";
+            var bool3 = Boolean(strBool);
+            console.log(bool3); // true
+
+
+            // 布尔值转字符串
+            var bool4 = false;
+            var strBool2 = String(bool4);
+            console.log(strBool2); // "false"
+
+
+            // 数组转字符串
+            var arr = [1, 2, 3];
+            var strArr = arr.toString();
+            console.log(strArr); // "1,2,3"
+
+            // 字符串转数组
+            var strArr2 = "1,2,3";
+            var arr2 = strArr2.split(",");
+            console.log(arr2); // ["1", "2", "3"]   
+
+
+
+            // 数组转数字
+            var arr3 = [1, 2, 3];
+            var numArr = arr3.join("");
+            console.log(numArr); // "123"
+
+            // 数字转数组
+            var numArr2 = "123";
+            var arr4 = numArr2.split("");
+            console.log(arr4); // ["1", "2", "3"]
+        </script>
+
+    </body>
+</html>

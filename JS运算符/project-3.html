@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>运算符练习</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
+<body>
+    <div id="output"></div>
+    
+    <script>
+        // 保存原始的console.log函数
+        var oldConsoleLog = console.log;
+
+        // 重新定义console.log函数，以捕获并显示控制台输出在网页上
+        console.log = function(message) {
+        if (typeof message == 'object') {
+            document.getElementById('output').innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+        } else {
+            document.getElementById('output').innerHTML += message + '<br />';
+        }
+        oldConsoleLog.apply(console, arguments); // 保留原始console.log的行为
+        };
+
+        //逻辑运算符
+        var a = true;
+        var b = false;
+        var c = a && b; //与运算
+        var d = a || b; //或运算
+        var e =!a; //非运算
+        console.log(c); //false
+        console.log(d); //true
+        console.log(e); //false
+
+        
+
+
+
+        //比较运算符
+        var f = 10;
+        var g = 20;
+        var h = f == g; //等于
+        var i = f === g; //全等于   
+
+   
+        var j = f != g; //不等于
+        var k = f !== g; //不全等于
+        var l = f < g; //小于
+        var m = f > g; //大于
+        var n = f <= g; //小于等于
+        var o = f >= g; //大于等于
+
+        console.log(h); //false
+        console.log(i); //false
+        console.log(j); //true
+        console.log(k); //true
+        console.log(l); //true
+        console.log(m); //false
+        console.log(n); //false
+        console.log(o); //false
+
+        console.log('This message will be shown on the webpage.');
+        console.log({name: 'John', age: 30});
+    </script>
+</body>
+</html> 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS引入方式</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>CSS引入方式</h1>
+	<p>CSS引入方式有三种，分别是内联样式、内部样式、外部样式。</p>
+	<h2>内联样式</h2>
+	<p style="color:red;">内联样式是通过标签的style属性来设置CSS样式的一种方式，这种方式不推荐使用，因为会导致代码混乱，不易维护。</p>
+	<h2>内部样式</h2>
+	<style>
+		h2 {
+			color: blue;
+		}
+	</style>
+	<h2>外部样式</h2>
+	<p>外部样式是将CSS样式定义在一个单独的CSS文件中，然后通过link标签引入到HTML文档中，这种方式是推荐使用的。</p>
+	<h2>总结</h2>
+	<p>CSS引入方式有三种，分别是内联样式、内部样式、外部样式。内联样式不推荐使用，内部样式和外部样式是推荐使用的。</p>
+</body>
+</html>

@@ -1,0 +1,71 @@
+HTML控制网页结构，CSS控制网页外观，JavaScript控制网页行为。
+
+CSS和CSS3有什么区别
+CSS（Cascading Style Sheets）是一种用来表现HTML或XML文档样式的语言。CSS3是CSS的最新版本，新增了很多特性，比如圆角、阴影、边框倒角、文字阴影、多列布局、动画、变换、多媒体查询、Flexbox、Grid等。CSS3的特性使网页制作更加丰富多彩，更适合复杂的网页设计。
+
+CSS和CSS3的区别主要有以下几点：
+
+1. 选择器：CSS3新增了很多选择器，比如圆角、阴影、边框倒角、文字阴影、多列布局、动画、变换、多媒体查询、Flexbox、Grid等。
+
+2. 单位：CSS3中，像素单位px已经成为CSS的标准单位，而CSS2.1中，像素单位px仍然是最常用的单位。
+
+3. 布局：CSS3新增了Flexbox和Grid布局，可以更加方便地进行网页布局。
+
+4. 其他特性：CSS3还新增了很多特性，比如混合模式、变换、过渡、动画、多列布局、文本渲染、字体特性、颜色特性等。
+
+总结：CSS3是CSS的最新版本，新增了很多特性，使网页制作更加丰富多彩，更适合复杂的网页设计。
+
+CSS学习资料：
+
+1. CSS权威指南：《CSS权威指南（第3版）》
+
+2. CSS参考手册：《CSS参考手册》
+
+3. CSS3参考手册：《CSS3参考手册》
+
+css学习网站：
+
+1. W3School：https://www.w3school.com.cn/css/index.asp
+
+2. 菜鸟教程：http://www.runoob.com/css/css-tutorial.html
+
+3. 极客学院：http://www.jikexueyuan.com/course/
+
+4. 前端开发者：https://www.f2er.com/css/
+
+5. 腾讯课堂：https://ke.qq.com/course/list/100000001
+
+CSS学习工具：
+
+1. CSS3 generator：https://www.css3generator.in/
+
+2. CSS3 generator：https://www.cssmatic.com/
+
+CSS学习视频：
+
+1. 张鑫旭老师的CSS3教程：https://www.bilibili.com/video/av10844171/
+
+2. 张鑫旭老师的CSS3实战教程：https://www.bilibili.com/video/av10844173/
+
+JavaScript学习资料：
+
+1. JavaScript权威指南：《JavaScript权威指南（第6版）》
+
+2. JavaScript高级程序设计：《JavaScript高级程序设计（第3版）》
+
+JavaScript学习网站：
+
+1. MDN Web Docs：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
+
+2. W3School：https://www.w3school.com.cn/js/index.asp
+
+JavaScript学习工具：
+
+1. CodePen：https://codepen.io/
+
+2. JSFiddle：https://jsfiddle.net/
+
+JavaScript学习视频：
+
+1. 阮一峰老师的JavaScript教程：https://www.bilibili.com/video/av10844172/
+

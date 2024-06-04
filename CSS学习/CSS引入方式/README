@@ -1,0 +1,121 @@
+CSS引入方式
+
+CSS引入方式有三种：
+
+（行内样式表）内联样式：在HTML标签中直接使用style属性，将CSS代码写在标签中，通过style属性直接将CSS代码应用到HTML元素上。
+
+内部样式表：在HTML文档的head标签中使用style标签，将CSS代码写在style标签中，通过style标签将CSS代码应用到HTML文档中。
+
+外部样式表：在HTML文档的head标签中使用link标签，将CSS文件链接到HTML文档中，通过link标签将CSS文件引入到HTML文档中。
+
+CSS引入方式的选择：
+
+一般情况下，优先使用外部样式表，因为外部样式表可以实现代码的重用，可以有效地提高代码的可维护性。
+
+如果需要在同一个HTML文档中使用多个CSS文件，可以将多个CSS文件链接到HTML文档中，然后通过@import规则导入到当前样式表中。
+
+如果需要在同一个HTML文档中使用多个外部样式表，可以将多个外部样式表链接到HTML文档中，然后通过@import规则导入到当前样式表中,@import规则可以导入多个外部样式表,但是使用很少，因为是先加载HTML文档，再加载CSS文件，这样会导致HTML文档的加载速度变慢。
+更多使用link.
+
+如果需要在同一个HTML文档中使用多个内部样式表，可以将多个内部样式表合并到一个内部样式表中，然后通过@import规则导入到当前样式表中。
+
+1---外部样式表：
+
+外部样式表的引入方式如下：
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+href属性指定了CSS文件路径，rel属性指定了样式表的类型，type属性指定了CSS文件的格式。
+
+rel的属性取值是stylesheet，表示样式表文件。
+
+type的属性取值是固定的，只能是text/css。
+
+HTML文件内容如下：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>外部样式表引入方式</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>外部样式表引入方式</h1>
+	<p>外部样式表引入方式是指将CSS代码写在一个单独的CSS文件中，然后通过link标签将CSS文件链接到HTML文档中，通过@import规则导入到当前样式表中。</p>
+</body>
+</html>
+```
+
+
+style.css文件内容如下：
+
+```css
+h1 {
+	color: red;
+}
+
+
+p {
+	font-size: 16px;
+	color: blue;
+}
+```
+
+
+2---内部样式表：
+
+内部样式表的引入方式如下：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>内部样式表引入方式</title>
+	<style type="text/css">
+		h1 {
+			color: red;
+		}
+
+		p {
+			font-size: 16px;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>内部样式表引入方式</h1>
+	<p>内部样式表引入方式是指将CSS代码写在style标签中，然后通过style标签将CSS代码应用到HTML文档中。</p>
+</body>
+</html>
+```
+type="text/css"属性表示样式表的格式，可以省略，因为默认就是text/css，也可以添加，表示这是标准的CSS。
+
+外部样式表和内部样式表的区别：
+
+外部样式表和内部样式表的区别主要在于样式的作用范围不同。
+
+外部样式表作用于整个HTML文档，可以被多个HTML文件共享，可以实现代码的重用。
+
+内部样式表作用于当前HTML文档，只能被当前HTML文件使用，不能被其他HTML文件共享。
+
+3---内联样式：
+
+内联样式的引入方式如下：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>内联样式引入方式</title>
+</head>
+<body>
+	<h1 style="color: red;">内联样式引入方式</h1>
+	<p style="font-size: 16px; color: blue;">内联样式引入方式是指将CSS代码写在HTML标签中，通过style属性直接将CSS代码应用到HTML元素上。</p>
+</body>
+</html>
+```
+
+
+内联样式的优先级高于外部样式表和内部样式表，可以覆盖掉它们的样式。
+

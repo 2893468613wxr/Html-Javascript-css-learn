@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meat charset="UTF-8">
+        <title>在元素中调用JS</title>
+    </meat>
+    <script>
+        function showMessage() {
+            alert("Hello World!");
+        }
+        function aleartMessage() {
+            alert("Goodbye World!");
+        }
+    </script>
+
+</head>
+<body>
+    <button onclick="showMessage()">Click me</button>
+    <input type="button" value="Click me" onclick="aleartMessage()">
+    <!-- alert() 方法用于显示警告框，它可以接受一个字符串参数，并显示在一个对话框中。 -->
+
+    <!-- onclick 属性用于绑定一个 JavaScript 函数到一个 HTML 元素的点击事件。 -->
+
+    <!-- 这里，我们绑定了两个函数到两个按钮的 onclick 事件上，分别是 showMessage() 和 aleartMessage()。 -->
+
+    <!-- 当用户点击按钮时，showMessage() 函数将会被调用，显示一个 Hello World! 的警告框。 -->
+
+    <!-- 当用户点击另一个按钮时，aleartMessage() 函数将会被调用，显示一个 Goodbye World! 的警告框。 -->
+
+
+    <!-- 注意，在 onclick 属性中，我们使用了函数名，而不是函数体。 -->
+
+    <!-- 这意味着，当 HTML 页面加载完成后，函数将会被执行。 -->
+
+    <!-- 因此，在 onclick 属性中，我们不需要使用括号，只需要函数名即可。 -->
+
+
+    <!-- 另外，我们也可以使用 document.getElementById() 方法来获取 HTML 元素，并绑定事件到它们上。 -->
+
+    <!-- 例如，我们可以这样写： -->
+
+    <button id="myButton">Click me</button>
+    <script>
+        var button = document.getElementById("myButton");
+        button.onclick = showMessage;
+    </script>
+
+    <!-- 这里，我们使用 document.getElementById() 方法获取了按钮元素，并将其保存在变量 button 中。 -->
+
+    <!-- 然后，我们将 showMessage() 函数绑定到按钮的 onclick 事件上。 -->
+
+    <!-- 这样，当用户点击按钮时，showMessage() 函数将会被调用。 -->
+</body>
+</html>

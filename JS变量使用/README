@@ -1,0 +1,63 @@
+
+// 变量声明
+var name = "John";
+var age = 30;
+var isMarried = true;
+
+// 变量赋值
+name = "Jane";
+age = 25;
+isMarried = false;
+
+// 输出变量值
+console.log(name); // Jane
+console.log(age); // 25
+console.log(isMarried); // false
+
+// 变量类型
+console.log(typeof name); // string
+console.log(typeof age); // number
+console.log(typeof isMarried); // boolean   
+
+// 变量作用域
+var x = 10;
+
+function myFunction() {
+  var x = 20;
+  console.log(x); // 20
+}
+
+myFunction();
+console.log(x); // 10
+
+// 变量命名规则
+// 1. 变量名必须以字母、数字、下划线开头
+// 2. 变量名不能包含空格
+// 3. 变量名不能使用关键字
+// 4. 变量名不能与系统保留字冲突
+// 5. 变量名应该简短，易于理解
+
+// 变量命名建议
+// 1. 使用有意义的变量名
+// 2. 变量名应该全部小写，单词之间使用下划线分隔
+// 3. 变量名应该具有描述性，避免使用无意义的单词
+// 4. 变量名应该简短，不要超过2-3个单词
+// 5. 变量名应该与项目相关，避免使用通用名称
+
+// 变量命名规范
+// 1. 变量名全部使用小写字母
+// 2. 变量名使用驼峰式命名法，即首字母小写，后续单词首字母大写
+// 3. 变量名应该具有描述性，避免使用无意义的单词
+// 4. 变量名应该简短，不要超过2-3个单词
+// 5. 变量名应该与项目相关，避免使用通用名称
+
+// 变量命名示例
+// 1. firstName
+// 2. lastName
+// 3. userName
+// 4. emailAddress
+// 5. totalCount
+// 6. totalCost
+// 7. isLoggedIn
+// 8. isAdminUser
+// 9. isUserActive

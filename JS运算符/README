@@ -1,0 +1,14 @@
+算术运算符：+ - * / % ** ++ -- 
+字符串运算符：+
+一元运算符：+ -! ~ typeof void delete
+赋值运算符：= += -= *= /= %= **=
+关系运算符：== ===!= !== > < >= <=
+逻辑运算符：&& ||!
+条件运算符：? : 
+逗号运算符：,
+位运算符：& | ^ ~ << >> >>>
+其他运算符：typeof void delete instanceof new
+比较运算符：> < >= <= instanceof in typeof  
+运算符优先级：() [] {} . -> ++ -- typeof void delete new instanceof in
+运算符的短路性：&& ||
+运算符的结合性：从左到右

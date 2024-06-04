@@ -1,0 +1,90 @@
+1， JavaScript关键字  （区分大小写）
+
+JavaScript是一门动态的脚本语言，它支持多种编程范式，包括面向对象编程、函数式编程、命令式编程等。下面是JavaScript的一些关键字：
+
+关键字	描述
+abstract	用于定义抽象类和接口。
+arguments	指向当前函数的实参列表。
+await	用于等待异步函数的结果。
+boolean	表示布尔值。
+break	用于退出循环或switch语句。
+byte	表示一个8位的有符号整数。
+case	用于在switch语句中定义一个分支。
+catch	用于捕获异常。
+char	表示一个单一的Unicode字符。
+class	用于定义类。
+const	用于定义常量。
+continue	用于跳过当前循环的剩余部分。
+debugger	用于调试程序。
+default	用于switch语句中的默认分支。
+delete	用于删除对象的属性。
+do	用于执行循环的一次迭代。
+double	表示一个双精度浮点数。
+else	用于在if语句中定义一个否定分支。
+enum	用于定义枚举类型。
+eval	用于执行字符串中的JavaScript代码。
+export	用于导出模块。
+extends	用于继承类。
+false	表示布尔值false。
+final	用于修饰类属性，表示属性不能被重新赋值。
+finally	用于异常处理中的最后一步。
+float	表示一个单精度浮点数。
+for	用于执行循环。
+function	用于定义函数。
+goto	用于无条件跳转。
+if	用于条件判断。
+implements	用于实现接口。
+import	用于导入模块。
+in	用于在for-in循环中指定循环变量。
+instanceof	用于判断对象是否属于某个类。
+int	表示一个32位的有符号整数。
+interface	用于定义接口。
+let	用于声明变量。
+long	表示一个64位的有符号整数。
+module	用于定义模块。
+native	用于定义原生函数。
+new	用于创建类的实例。
+null	表示空值。
+package	用于定义包。
+private	用于修饰类的属性和方法，表示属性或方法只能在类的内部访问。
+protected	用于修饰类的属性和方法，表示属性或方法只能在类的内部和子类中访问。
+public	用于修饰类的属性和方法，表示属性或方法可以在任何地方访问。
+return	用于从函数中返回一个值。
+short	表示一个16位的有符号整数。
+static	用于修饰类的属性和方法，表示属性或方法可以被类的所有实例共享。
+super	用于访问父类的属性和方法。
+switch	用于多分支条件判断。
+synchronized	用于同步代码块。
+this	用于引用当前对象的实例。
+throw	用于抛出一个异常。
+throws	用于声明函数可能抛出的异常。
+transient	用于修��类的属性，表示属性不会被序列化。
+true	表示布尔值true。
+try	用于异常处理。
+typeof	用于获取一个变量的数据类型。
+var	用于声明变量。
+void	表示一个空类型。
+volatile	用于修饰变量，表示变量的值可能被其他线程修改。
+while	用于执行循环。
+with	用于简化代码，用于调用对象的属性和方法。
+
+JavaScript的关键字列表并不完整，还有很多其他的关键字，但这些关键字基本上可以覆盖大部分的编程场景。
+
+JavaScript的关键字参考：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Lexical_grammar
+
+
+
+2， ECMA-262标准的保留字列表：https://www.ecma-international.org/ecma-262/10.0/index.html#sec-reserved-words
+
+EMCA-262标准定义了JavaScript的语法和语义，其中有一些保留字是不能作为标识符的，这些保留字被称为关键字。
+
+abstract、arguments、await、boolean、break、byte、case、catch、char、
+class、const、continue、debugger、default、delete、do、double、else、enum、eval、
+export、extends、false、final、finally、float、for、function、goto、if、implements、import、in、
+instanceof、int、interface、let、long、module、native、new、null、package、private、protected、
+public、return、short、static、super、switch、synchronized、this、throw、throws、transient、true、
+try、typeof、var、void、volatile、while、with
+
+JavaScript的关键字列表：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Lexical_grammar#%E5%85%B3%E9%94%AE%E5%AD%97%E7%AC%A6%E5%8F%B7%E5%88%97%E8%A1%A8
+
+JavaScript的保留字列表：https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Lexical_grammar#%E4%B8%8D%E5%8F%AF%E8%AE%A2%E5%8F%B7%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97%E7%AC%A6

@@ -1,0 +1,139 @@
+在JavaScript中，有以下几种数据类型：
+
+- 字符串（String）
+- 数字（Number）
+- 布尔值（Boolean）
+- 数组（Array）
+- 对象（Object）
+- 函数（Function）
+- 正则表达式（RegExp）
+- 未定义值（undefined）
+- 空值（null）
+
+其中，字符串、数字、布尔值、数组、对象、函数、正则表达式，未定义值，空值都是基本数据类型。
+
+## 字符串（String）
+
+字符串是由零个或多个字符组成的序列，用单引号或双引号括起来。字符串可以用加号（+）运算符连接，也可以用乘号（*）运算符重复。
+
+```javascript
+var str1 = "Hello";
+var str2 = "World";
+var str3 = str1 + " " + str2;
+var str4 = str1.repeat(3);
+console.log(str3); // "Hello World"
+console.log(str4); // "Hello"
+```
+
+
+## 数字（Number）
+
+数字是整数或小数，可以用十进制、十六进制或科学计数法表示。
+
+```javascript
+var num1 = 10;
+var num2 = 3.14;
+var num3 = 0xff; // 十六进制
+var num4 = 1e3; // 科学计数法
+console.log(num1 + num2 + num3 + num4); // 104.14
+```
+
+
+## 布尔值（Boolean）
+
+
+布尔值只有两个值：true和false。
+
+```javascript
+var bool1 = true;
+var bool2 = false;
+console.log(bool1 && bool2); // false
+console.log(bool1 || bool2); // true
+```
+
+
+## 数组（Array）
+
+
+数组是一组按顺序排列的元素，可以包含不同的数据类型。
+
+```javascript
+var arr1 = [1, 2, 3];
+var arr2 = ["apple", "banana", "orange"];
+var arr3 = [true, "hello", 10];
+console.log(arr1.length); // 3
+console.log(arr2[1]); // "banana"
+console.log(arr3[2]); // 10
+```
+
+
+## 对象（Object）
+
+
+对象是一组属性（property）和值（value）的集合。
+
+
+```javascript
+var obj1 = {name: "John", age: 30, city: "New York"};
+console.log(obj1.name); // "John"
+console.log(obj1.age); // 30
+```
+
+
+## 函数（Function）
+
+
+函数是一段JavaScript代码，可以被其他代码调用。
+
+
+```javascript
+function sayHello() {
+  console.log("Hello");
+}
+
+sayHello(); // "Hello"
+```
+
+
+## 正则表达式（RegExp）
+
+
+正则表达式是一种用来匹配字符串的模式。
+
+
+```javascript
+var pattern = /hello/i;
+var str = "Hello World";
+console.log(pattern.test(str)); // true
+```
+
+
+## 未定义值（undefined）
+
+
+未定义值是指变量没有被赋值，或者变量声明后没有被初始化。
+
+
+```javascript
+var x;
+console.log(x); // undefined
+```
+
+
+## 空值（null）
+
+
+空值是指变量没有值，它是一个特殊的值，表示“空”、“无”。
+
+
+```javascript
+var x = null;
+console.log(x); // null
+```
+
+
+## 参考资料
+
+- [JavaScript数据类型](https://www.runoob.com/js/js-data-types.html)
+
+

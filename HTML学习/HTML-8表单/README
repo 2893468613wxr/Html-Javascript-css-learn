@@ -1,0 +1,430 @@
+HTML-8表单
+
+什么是表单：
+    表单是一种结构化的用户输入数据集合，包含标签、控件、属性、值等元素，用于向服务器提交数据。
+
+    表单的常用属性及用法：
+        常用属性：
+            action：表单提交的地址
+            method：表单提交的方式，常用值：get、post
+            enctype：表单数据编码类型，常用值：application/x-www-form-urlencoded、multipart/form-data、text/plain
+            name：表单的名称
+            target：表单提交后，页面打开的方式，常用值：_self、_blank、_parent、_top
+        常用用法：
+            表单提交：
+                表单提交的两种方式：
+                    get：通过URL传递参数，参数在URL中显示，安全性较低，一般用于查询信息
+                    post：通过请求体传递参数，参数在请求体中显示，安全性较高，一般用于修改信息
+                表单提交的步骤：
+                    1. 收集用户输入的数据
+                    2. 创建表单元素
+                    3. 设置表单属性：action、method、enctype、name、target
+                    4. 将表单元素添加到文档中
+                    5. 编写提交处理程序，处理表单提交的数据
+                    6. 处理提交结果，如成功或失败，并给出相应的提示信息
+            表单验证：
+                常用的验证规则：
+                    required：必填项
+                    pattern：正则表达式验证
+                    min、max：最小值、最大值
+                    minlength、maxlength：最小长度、最大长度
+                    step：步长
+                    type：数据类型，如number、email、url、date、time、datetime、datetime-local、month、week、tel、color
+                验证错误提示信息：
+                    通过设置元素的title属性，可以给用户提示信息，如：
+                        <input type="text" name="username" required title="请输入用户名">    
+                    当用户未输入用户名时，鼠标移到该元素上，会显示提示信息：请输入用户名    
+
+    
+        表单元素：
+            input：输入框，用于输入文本、数字、日期等信息
+            form：表单，用于包裹其他元素，并提供提交功能
+            label：标签，用于关联控件和说明文字
+            fieldset：字段集，用于对相关元素进行分组
+            legend：字段集标题，用于对字段集进行描述
+            output：输出框，用于显示计算结果
+            progress：进度条，用于显示任务进度
+            meter：计量器，用于显示进度百分比
+            select：下拉框，用于选择单个选项
+            textarea：多行文本框，用于输入大量文本
+            button：按钮，用于触发事件
+            checkbox：多选框，用于选择多个选项
+            radio：单选框，用于选择单个选项
+            file：文件上传框，用于上传文件
+            submit：提交按钮，用于提交表单
+            reset：重置按钮，用于重置表单
+            image：图片按钮，用于提交图片
+
+        表单分为八种：
+            文本输入框：input type="text"
+            密码输入框：input type="password"
+            单选按钮：input type="radio"
+            复选框：input type="checkbox"
+            下拉列表：select
+            多行文本输入框：textarea
+            提交按钮：input type="submit"
+            重置按钮：input type="reset"
+            文件上传框：input type="file"
+
+        表单元素属性：
+            name：元素名称，用于在提交时标识元素
+            value：元素值，用于设置元素初始值
+            placeholder：提示文本，用于提示用户输入内容
+            required：是否必填，用于验证元素是否为空
+            readonly：是否只读，用于禁止用户修改元素值
+            disabled：是否禁用，用于禁止用户操作元素
+            tabindex：Tab键顺序，用于设置元素的Tab键顺序
+            autocomplete：自动完成，用于设置浏览器是否自动完成表单
+            list：关联列表，用于设置与元素相关联的列表
+            pattern：正则表达式，用于验证元素值是否符合规则
+            min、max：最小值、最大值，用于设置元素值的范围
+            step：步长，用于设置元素值的增量
+            maxlength、minlength：最大长度、最小长度，用于限制元素值的长度
+            size：元素尺寸，用于设置元素的显示尺寸
+            multiple：是否多选，用于设置元素是否可以选择多个值
+            accept：文件类型，用于设置可以上传的文件类型
+            alt：替代文本，用于设置图像的替代文本   
+
+   
+            form：关联表单，用于设置元素关联的表单
+            formaction：表单提交地址，用于设置提交表单的地址
+            formenctype：表单数据编码类型，用于设置提交表单的数据编码类型
+            formmethod：表单提交方式，用于设置提交表单的请求方式
+            formnovalidate：是否禁用表单验证，用于设置是否禁用表单验证
+            formtarget：表单提交后，页面打开的方式，用于设置提交表单后，页面打开的方式
+            form：表单元素，用于包裹其他元素，并提供提交功能
+            label：标签，用于关联控件和说明文字
+            fieldset：字段集，用于对相关元素进行分组
+            legend：字段集标题，用于对字段集进行描述
+            output：输出框，用于显示计算结果
+            progress：进度条，用于显示任务进度
+            meter：计量器，用于显示进度百分�
+            select：下拉框，用于选择单个选项
+            textarea：多行文本框，用于输入大量文本
+            button：按钮，用于触发事件
+            checkbox：多选框，用于选择多个选项
+
+
+    form标签：
+        用于包裹其他元素，并提供提交功能，常用属性：
+            action：表单提交的地址
+            method：表单提交的方式，常用值：get、post
+            enctype：表单数据编码类型，常用值：application/x-www-form-urlencoded、multipart/form-data、text/plain
+            name：表单的名称,区分不同的表单
+            target：表单提交后，页面打开的方式，常用值：_self、_blank、_parent、_top
+        语法：
+            <form action="提交地址" method="提交方式" enctype="编码类型" name="表单名称" target="打开方式">
+                表单元素
+            
+
+    label标签：
+        用于关联控件和说明文字，常用属性：
+            for：关联元素的id
+            form：关联表单的id
+            title：提示文本，鼠标移到该元素上，会显示提示信息
+        语法：
+            <label for="控件id" form="表单id" title="提示文本">说明文字</label>
+
+    fieldset标签：
+        用于对相关元素进行分组，常用属性：
+            disabled：是否禁用，用于禁止用户操作元素
+            form：关联表单的id
+            name：字段集的名称
+        语法：
+            <fieldset disabled="true" form="表单id" name="字段集名称">
+                字段集元素
+            </fieldset>
+
+    legend标签：
+        用于对字段集进行描述，常用属性：
+            form：关联表单的id
+        语法：
+            <legend form="表单id">字段集标题</legend>
+
+    output标签：
+        用于显示计算结果，常用属性：
+            for：关联元素的id
+            form：关联表单的id
+            name：输出框的名称
+        语法：
+            <output for="控件id" form="表单id" name="输出框名称">计算结果</output>
+
+    progress标签：
+        用于显示任务进度，常用属性：
+            value：当前进度值，取值范围0-100
+            max：最大进度值，用于设置进度条的最大值
+            form：关联表单的id
+            name：进度条的名称
+        语法：
+            <progress value="当前进度值" max="最大进度值" form="表单id" name="进度条名称"></progress>
+
+    meter标签：
+        用于显示进度百分比，常用属性：
+            value：当前进度值，取值范围0-100
+            min：最小进度值，用于设置进度条的最小值
+            max：最大进度值，用于设置进度条的最大值
+            low：低限值，用于设置进度条的低限值
+            high：高限值，用于设置进度条的高限值
+            optimum：最佳值，用于设置进度条的最佳值
+            form：关联表单的id
+            name：计量器的名称
+        语法：
+            <meter value="当前进度值" min="最小进度值" max="最大进度值" low="低限值" high="高限值" optimum="最佳值" form="表单id" name="计量器名称"></meter>
+
+    select标签：
+        用于选择单个选项，常用属性：
+            name：下拉框的名称
+            id：下拉框的id
+            disabled：是否禁用，用于禁止用户操作元素
+            form：关联表单的id
+            multiple：是否多选，用于设置元素是否可以选择多个值
+            size：下拉框的显示大小，用于设置下拉框的显示行数
+            required：是否必填，用于验证元素是否为空
+            tabindex：Tab键顺序，用于设置元素的Tab键顺序
+        语法：
+            <select name="下拉框名称" id="下拉框id" disabled="true" form="表单id" multiple="true" size="显示大小" required="true" tabindex="Tab键顺序">
+                <option value="值">选项</option>
+                <option value="值">选项</option>
+                <option value="值">选项</option>
+            </select>
+
+    textarea标签：
+        用于输入大量文本，常用属性：
+            name：文本框的名称
+            id：文本框的id
+            disabled：是否禁用，用于禁止用户操作元素
+            form：关联表单的id
+            placeholder：提示文本，用于提示用户输入内容
+            readonly：是否只读，用于禁止用户修改元素值
+            required：是否必填，用于验证元素是否为空
+            tabindex：Tab键顺序，用于设置元素的Tab键顺序
+            cols：文本框的列数
+            rows：文本框的行数
+        语法：
+            <textarea name="文本框名称" id="文本框id" disabled="true" form="表单id" placeholder="提示文本" readonly="true" required="true" tabindex="Tab键顺序" cols="列数" rows="行数">文本内容</textarea>
+
+    button标签：
+        用于触发事件，常用属性：
+            type：按钮类型，常用值：button、submit、reset
+            name：按钮的名称
+            value：按钮的值
+            disabled：是否禁用，用于禁止用户操作元素
+            form：关联表单的id
+            tabindex：Tab键顺序，用于设置元素的Tab键顺序
+        语法：
+            <button type="按钮类型" name="按钮名称" value="按钮值" disabled="true" form="表单id" tabindex="Tab键顺序">按钮文本</button>
+
+    input标签：
+        用于输入文本、数字、日期等信息，常用属性：
+            type：输入框类型，常用值：text文本输入框、password密码输入框、radio单选按钮、checkbox复选框、file文件上传框、submit提交按钮、reset重置按钮、image图片按钮
+            name：输入框的名称
+            id：输入框的id
+            value：输入框的值
+            placeholder：提示文本，用于提示用户输入内容
+            readonly：是否只读，用于禁止用户修改元素值
+            disabled：是否禁用，用于禁止用户操作元素
+            form：关联表单的id
+            required：是否必填，用于验证元素是否为空
+            tabindex：Tab键顺序，用于设置元素的Tab键顺序
+            pattern：正则表达式，用于验证元素值是否符合规则
+            min、max：最小值、最大值，用于设置元素值的范围
+            step：步长，用于设置元素值的增量
+            maxlength、minlength：最大输入长度、最小输入长度，用于限制元素值的长度
+            size：输入框的显示大小，用于设置输入框的显示宽度
+            accept：文件类型，用于设置可以上传的文件类型
+            alt：替代文本，用于设置图像的替代文本
+            radio：单选框的名称
+            checked：是否选中，用于设置单选框是否默认选中
+            multiple：是否多选，用于设置元素是否可以选择多个值
+            file：文件上传框的名称
+            button：按钮的名称
+            formaction：表单提交地址，用于设置提交表单的地址
+            formenctype：表单数据编码类型，用于设置提交表单的数据编码类型
+            formmethod：表单提交方式，用于设置提交表单的请求方式
+            formnovalidate：是否禁用表单验证，用于设置是否禁用表单验证
+            formtarget：表单提交后，页面打开的方式，用于设置提交表单后，页面打开的方式
+            reset：重置按钮的名称,用于重置表单,只能清空它所在form表单的输入内容
+        语法：
+            <input type="输入框类型" name="输入框名称" id="输入框id" value="输入框值" placeholder="提示文本" readonly="true" disabled="true" form="表单id" required="true" tabindex="Tab键顺序" pattern="正则表达式" min="最小值" max="最大值" step="步长" maxlength="最大长度" minlength="最小长度" size="显示大小" accept="文件类型" alt="替代文本">
+
+            怎么样使input标签的type属性设置为image，实现图片上传功能：
+                1. 首先在input标签中设置type属性为file，并设置accept属性为允许上传的图片类型
+                2. 然后在input标签后面添加一个button标签，设置type属性为image，并设置按钮的value属性为上传图片，同时设置按钮的form属性为上传文件的form元素的id，并设置按钮的formaction属性为上传文件的地址
+                3. 最后在form元素中添加一个input标签，设置type属性为hidden，并设置name属性为上传文件的input元素的name属性，并设置value属性为上传文件的input元素的value属性，用于在提交表单时将上传文件的值传递到服务器端
+            怎么样使input标签的输入框长度变长：
+                1. 在input标签中设置size属性为需要的长度
+                2. 然后在input标签中设置cols属性和rows属性，分别设置列数和行数
+                3. 这样就可以实现输入框的长度变长了
+                注意：设置cols属性和rows属性后，输入框的显示效果会变成多行文本框，如果需要单行文本框，可以设置cols属性为1，rows属性为1
+            怎样使密码输入框输入的密码让用户可以自己选择是否显示密码：
+                1. 在密码输入框中设置type属性为text
+                2. 在密码输入框后面添加一个checkbox标签，设置name属性为showpassword，并设置value属性为true
+                3. 在密码输入框的onchange事件中，通过判断showpassword的值，来控制密码输入框的type属性，如果showpassword为true，则将type属性设置为password，否则将type属性设置为text 
+                4. 这样就可以实现密码输入框的显示和隐藏了
+
+
+    三种按钮：
+        按钮类型：
+            button：普通按钮，用于触发事件
+            submit：提交按钮，用于提交表单
+            reset：重置按钮，用于重置表单
+
+        普通按钮：一般情况配合JS进行操作
+            语法：
+                <button type="button">按钮文本</button>
+
+        提交按钮：用于提交表单，配合form标签使用，给服务器提交数据
+            语法：
+                <button type="submit">提交按钮</button>
+
+        重置按钮：用于重置表单，配合form标签使用，将表单重置为初始状态
+            语法：
+                <button type="reset">重置按钮</button>
+
+
+        按钮状态：
+            按钮的状态分为三种：默认状态、激活状态、禁用状态
+            默认状态：按钮的默认状态，用户可以点击按钮
+            激活状态：当用户点击按钮时，按钮的状态变成激活状态，按钮的样式发生变化，用户可以点击按钮
+            禁用状态：当用户点击按钮时，按钮的状态变成禁用状态，按钮的样式发生变化，用户无法点击按钮，按钮的功能失效
+
+
+        按钮属性：
+            name：按钮的名称
+            value：按钮的值
+            disabled：是否禁用，用于禁止用户操作按钮
+            form：关联表单的id
+            tabindex：Tab键顺序，用于设置元素的Tab键顺序
+        语法：
+            <button type="按钮类型" name="按钮名称" value="按钮值" disabled="true" form="表单id" tabindex="Tab键顺序">按钮文本</button> 
+
+
+下拉列表
+    下拉列表常用标签：
+        select：下拉框，用于选择单个选项
+        option：选项，用于显示选项内容
+        optgroup：选项组，用于对选项进行分组
+        datalist：数据列表，用于存储选项内容，供用户选择
+        label：标签，用于关联控件和说明文字
+    下拉列表常用属性：
+        selected：是否选中，用于设置选项是否默认选中
+        disabled：是否禁用，用于禁止用户选择该选项
+        label：选项的标签，用于显示选项说明
+        name：下拉框的名称
+        id：下拉框的id
+        disabled：是否禁用，用于禁止用户操作元素
+        form：关联表单的id
+        multiple：是否多选，用于设置元素是否可以选择多个值
+        size：下拉框的显示大小，用于设置下拉框的显示行数
+        required：是否必填，用于验证元素是否为空
+        tabindex：Tab键顺序，用于设置元素的Tab键顺序
+    下拉列表常用事件：
+        onchange：下拉框值改变时触发的事件
+        onfocus：下拉框获得焦点时触发的事件
+        onblur：下拉框失去焦点时触发的事件
+    下拉列表常用方法：
+        add()：向下拉框中添加选项
+        remove()：从下拉框中删除选项
+        item()：获取下拉框中的选项
+        namedItem()：通过名称获取下拉框中的选项
+    下拉列表常用样式：
+        display：none：隐藏下拉框
+        display：block：显示下拉框
+        position：absolute：将下拉框固定在页面某个位置
+        z-index：100：将下拉框放在其它元素之上
+        width：100%：设置下拉框的宽度为100%
+        height：auto：设置下拉框的高度自适应
+        border：1px solid #ccc：设置下拉框的边框
+        background-color：#fff：设置下拉框的背景色
+        padding：5px：设置下拉框的内边距
+        font-size：14px：设置下拉框的字体大小
+        line-height：1.5：设置下拉框的行高
+        color：#333：设置下拉框的字体颜色
+        cursor：pointer：设置下拉框的鼠标样式
+        box-shadow：0 2px 4px rgba(0,0,0,0.15)：设置下拉框的阴影效果
+        opacity：1：设置下拉框的透明度
+        filter：alpha(opacity=100)：设置下拉框的透明度
+        -webkit-appearance：none：设置下拉框的样式为webkit内核样式
+        -moz-appearance：none：设置下拉框的样式为moz内核样式
+        -ms-appearance：none：设置下拉框的样式为ms内核样式
+        -o-appearance：none：设置下拉框的样式为o内核样式
+        appearance：none：设置下拉框的样式为标准样式
+        -webkit-border-radius：4px：设置下拉框的圆角半径
+        -moz-border-radius：4px：设置下拉框的圆角半径
+        -ms-border-radius：4px：设置下拉框的圆角半径
+        -o-border-radius：4px：设置下拉框的圆角半径
+        border-radius：4px：设置下拉框的圆角半径
+        -webkit-box-sizing：border-box：设置下拉框的盒模型为border-box
+        -moz-box-sizing：border-box：设置下拉框的盒模型为border-box
+        -ms-box-sizing：border-box：设置下拉框的盒模型为border-box
+        -o-box-sizing：border-box：设置下拉框的盒模型为border-box
+        box-sizing：border-box：设置下拉框的盒模型为border-box
+        -webkit-transition：all 0.3s ease-in-out：设置下拉框的过渡效果
+        -moz-transition：all 0.3s ease-in-out：设置下拉框的过渡效果
+        -ms-transition：all 0.3s ease-in-out：设置下拉框的过渡效果
+        -o-transition：all 0.3s ease-in-out：设置下拉框的过渡效果
+        transition：all 0.3s ease-in-out：设置下拉框的过渡效果
+        -webkit-user-select：none：设置下拉框的文本不可选中
+        -moz-user-select：none：设置下拉框的文本不可选中
+        -ms-user-select：none：设置下拉框的文本不可选中
+        -o-user-select：none：设置下拉框的文本不可选中
+        user-select：none：设置下拉框的文本不可选中
+
+    
+
+    选项标签：
+        用于显示选项内容，常用属性：
+            value：选项的值
+            selected：是否选中，用于设置选项是否默认选中
+            disabled：是否禁用，用于禁止用户选择该选项
+            label：选项的标签，用于显示选项说明
+            form：关联表单的id
+        语法：
+            <option value="选项值" selected="true" disabled="true" label="选项标签" form="表单id">选项内容</option>
+
+    选项组标签：
+        用于对选项进行分组，常用属性：
+            label：选项组的标签，用于显示选项组说明
+        语法：
+            <optgroup label="选项组标签">
+                <option value="选项值">选项内容</option>
+                <option value="选项值">选项内容</option>
+            </optgroup>
+
+    数据列表标签：
+        用于存储选项内容，供用户选择，常用属性：
+            id：数据列表的id
+        语法：
+            <datalist id="数据列表id">
+                <option value="选项值">选项内容</option>
+                <option value="选项值">选项内容</option>
+            </datalist>
+
+    标签标签：
+        用于关联控件和说明文字，常用属性：
+            for：关联元素的id
+            form：关联表单的id
+            title：提示文本，鼠标移到该元素上，会显示提示信息
+        语法：
+            <label for="控件id" form="表单id" title="提示文本">说明文字</label> 
+        
+    下拉框：
+        用于选择单个选项，常用属性：
+            name：下拉框的名称
+            id：下拉框的id
+            disabled：是否禁用，用于禁止用户操作元素            
+            form：关联表单的id
+            multiple：是否多选，用于设置元素是否可以选择多个值
+            size：下拉框的显示大小，用于设置下拉框的显示行数
+            required：是否必填，用于验证元素是否为空    
+
+    
+        语法：
+            <select name="下拉框名称" id="下拉框id" disabled="true" form="表单id" multiple="true" size="显示行数" required="true">
+                <option value="选项值">选项内容</option>
+                <option value="选项值">选项内容</option>
+                <optgroup label="选项组标签">
+                    <option value="选项值">选项内容</option>
+                    <option value="选项值">选项内容</option>
+                </optgroup>
+            </select>

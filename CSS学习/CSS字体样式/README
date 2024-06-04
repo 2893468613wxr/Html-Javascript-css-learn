@@ -1,0 +1,107 @@
+CSS字体样式：
+
+
+在实体开发中，比较美观的中文字体有“微软雅黑”、“宋体”、“黑体”等，英文字体有“Times New Roman”、“Arial”、“Helvetica”等，而在网页设计中，常用的字体有“Arial”、“Verdana”、“Helvetica”等。CSS字体样式可以设置网页的字体样式，包括字体的选择、字体大小、字体粗细、字体风格、字体颜色、字体对齐、字体装饰、字体变形、字体族、字体嵌入等。本文将介绍CSS字体样式的相关知识。
+
+CSS字体样式主要包括字体的选择、字体大小、字体粗细、字体风格、字体颜色、字体对齐、字体装饰、字体变形、字体族、字体嵌入等。
+
+字体样式属性：
+
+
+- font-family：字体族名称或字体文件路径。
+- font-size：字体大小。
+- font-weight：字体粗细。
+- font-style：字体风格。
+- font-color：字体颜色。
+- text-align：字体对齐。
+- text-decoration：字体装饰。
+- font-variant：字体变形。
+- font-family：字体族。
+- font-embed：字体嵌入。
+
+1.字体选择
+
+CSS字体样式的第一步是选择字体。CSS提供了四种字体选择方式：
+
+- 字体族：通过字体族名称来指定字体，如“Arial”、“Helvetica”、“Verdana”等。
+- 字体文件：通过字体文件路径来指定字体，如“url(myfont.woff)”、“url(myfont.otf)”等。
+- 系统字体：通过系统字体名称来指定字体，如“serif”、“sans-serif”、“monospace”等。
+- 自定义字体：通过@font-face规则来定义字体，如“@font-face { font-family: myFont; src: url(myfont.woff); }”等。
+
+2.字体大小
+
+CSS字体样式的第二步是设置字体大小。CSS提供了三种字体大小设置方式：
+
+- 绝对字体大小：通过px、pt、pc、in、cm、mm等单位来设置字体大小。
+- 相对字体大小：通过em、ex、ch等单位来设置字体大小，相对于父元素的字体大小。
+- 百分比字体大小：通过%来设置字体大小，相对于父元素的宽度。
+
+3.字体粗细
+
+CSS字体样式的第三步是设置字体粗细。CSS提供了五种字体粗细设置方式：
+
+- 细体字：font-weight: lighter;
+- 正常粗细：font-weight: normal;
+- 粗体字：font-weight: bold;
+- 特粗体字：font-weight: bolder;
+- 100-900之间的数字：font-weight: 100~900;
+
+4.字体风格
+
+CSS字体样式的第四步是设置字体风格。CSS提供了五种字体风格设置方式：
+
+- 常规体：font-style: normal;
+- 斜体字：font-style: italic;
+- 粗体字：font-style: oblique;
+- 无衬线字体：font-style: none;
+- 字体变细：font-style: oblique 10deg;
+
+5.字体颜色
+
+CSS字体样式的第五步是设置字体颜色。CSS提供了三种字体颜色设置方式：
+
+- 颜色名称：font-color: red;
+- 十六进制颜色值：font-color: #FF0000;
+- RGB颜色值：font-color: rgb(255, 0, 0);
+
+6.字体对齐
+
+CSS字体样式的第六步是设置字体对齐。CSS提供了三种字体对齐设置方式：
+
+- 左对齐：text-align: left;
+- 居中对齐：text-align: center;
+- 右对齐：text-align: right;
+
+7.字体装饰
+
+CSS字体样式的第七步是设置字体装饰。CSS提供了四种字体装饰设置方式：
+
+- 无装饰：text-decoration: none;
+- 下划线：text-decoration: underline;
+- 删除线：text-decoration: line-through;
+- 双下划线：text-decoration: underline line-through;
+
+8.字体变形
+
+CSS字体样式的第八步是设置字体变形。CSS提供了三种字体变形设置方式：
+
+- 正常变形：font-variant: normal;
+- 小型大写字母：font-variant: small-caps;
+- 字母小写：font-variant: small-caps;
+- 字母大写：font-variant: all-small-caps;
+
+9.字体族（字体类型）
+
+CSS字体样式的第九步是设置字体族。CSS提供了两种字体族设置方式：
+
+- 字体族名称：font-family: Arial, sans-serif;
+- 字体文件路径：font-family: "Times New Roman", Times, serif;   
+
+注：字体族名称和字体文件路径可以用逗号分隔，也可以用双引号括起来。
+
+10.字体嵌入
+
+CSS字体样式的第十步是设置字体嵌入。CSS提供了两种字体嵌入设置方式：
+
+- 内嵌字体：font-embed: true;
+- 外链字体：font-embed: false;

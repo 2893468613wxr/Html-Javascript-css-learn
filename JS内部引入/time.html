@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>时间</title>
+    <!-- 1.head 引入JS文件 -->
+    <script>
+        // 定义一个函数，打印当前时间
+        function printTime() {
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = now.getMonth() + 1;
+            var date = now.getDate();
+            var hour = now.getHours();
+            var minute = now.getMinutes();
+            var second = now.getSeconds();
+            var timeStr = year + "年" + month + "月" + date + "日 " + hour + "时" + minute + "分" + second + "秒";
+            document.getElementById("time").innerHTML = timeStr;
+        }
+        // 调用函数，每隔一秒调用一次
+        setInterval(printTime, 1000);
+    </script>
+    <!-- 定义一个div元素，用于显示时间 -->
+    <div id="time"></div>
+</head>
+<body>
+    <!-- 2.body 调用JS函数，每隔一秒调用一次 -->
+    <script>
+        printTime();
+        setInterval(printTime, 1000);
+        document.getElementById("time").innerHTML = "岂不闻光阴如骏马加鞭，日月如落花如流水。";
+        //document.write("岂不闻光阴如骏马加鞭，日月如落花如流水。");在页面输出内容
+    </script>
+</body>
+</html>

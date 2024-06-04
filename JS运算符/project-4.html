@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>运算符练习</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+
+        //保留原始的console.log函数
+        var oldconsolelog = console.log;
+        
+        //重新定义console.lg函数，以捕获并显示控制台输出在页面上
+        console.log = function(msg){
+            if (typeof message == 'object') {
+                document.getElementById("output").innerHTML += (JSON && JSON.stringify? JSON.stringify(message) : message) + "<br>";
+            } else {
+                document.getElementById("output").innerHTML += msg + "<br>";
+            }
+
+            //保留原始的console.log函数的行为
+            oldconsolelog.apply(console, arguments);
+        }
+
+        //条件运算符
+        var a = 10;
+        var b = 20;
+        var c = (a > b)? "a大于b" : "a小于等于b";
+        console.log(c);
+
+        //算术运算符
+        var x = 10;
+        var y = 5;
+        var z = x + y;
+        console.log(z);
+
+        //赋值运算符
+        var a = 10;
+        a += 5; //a = a + 5;
+        console.log(a);
+
+        //逻辑运算符
+        var a = true;
+        var b = false;
+        var c = (a && b)? "a和b都为true" : "a和b有一个不为true";
+        console.log(c);
+
+        var a = true;
+        var b = false;
+        var c = (a || b)? "a或b有一个为true" : "a和b都不为true";
+        console.log(c);
+
+        var a = true;
+        var b = false;
+        var c =!a;
+        console.log(c);
+    </script>
+</body>
+</html>

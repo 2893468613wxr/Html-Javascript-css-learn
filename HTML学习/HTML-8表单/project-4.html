@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>练习8-HTML-表单</title>
+    <style>
+        .center {
+          width: 500px;
+          margin-top: 25px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+</head>
+<body>
+    <div class="center">
+        <form action="submit.php" method="post">
+            <label for="username">昵称：</label>
+            <input type="text" id="username" name="username" placeholder="请输入昵称" required><br><br>
+            <lanel for="password">密码</lanel>
+            <input type="password" id="password" name="password" placeholder="请输入密码" required><br><br>
+            <label for="email">邮箱：</label>
+            <input type="email" id="email" name="email" placeholder="请输入邮箱" required>
+            <select name="email" id="email">
+                <option value="qq.com">QQ邮箱</option>
+                <option value="163.com">163邮箱</option>
+                <option value="gmail.com">Gmail邮箱</option>
+            </select><br><br>
+            <label for="gender">性别：</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">男</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">女</label><br><br>
+            <label for="interest">爱好：</label>
+            <input type="checkbox" id="reading" name="interest[]" value="reading" required>
+            <label for="reading">阅读</label>
+            <input type="checkbox" id="swimming" name="interest[]" value="swimming" required>
+            <label for="swimming">游泳</label>
+            <input type="checkbox" id="running" name="interest[]" value="running" required>
+            <label for="running">跑步</label><br><br>
+            <label for="message">个人简介：</label>
+            <textarea id="message" cows="30" rows="5" name="message" placeholder="请输入个人简介"></textarea><br><br>
+            <label for="file">上传个人照片：</label><br>
+            <input type="file" id="file" name="file"><br><br>
+            <hr />
+            <input type="submit" value="立即注册">
+        </form>
+    </div>
+</body> 
+</html>

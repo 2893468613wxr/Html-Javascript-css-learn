@@ -1,0 +1,155 @@
+常用HTML5表格标签及属性
+表格已被CSS3规范取代，但仍然有许多HTML5表格标签及属性可以应用于网页制作。本文将介绍常用的HTML5表格标签及属性。
+HTML5表格标签及属性主要包括：
+
+表格标签：
+
+<table>：定义表格
+<tr>：定义表格行
+<th>：定义表格头部单元格
+<td>：定义表格数据单元格
+<caption>：定义表格标题
+    一个表格一个标题
+
+
+表格属性：
+
+border：设置表格边框宽度
+cellpadding：设置单元格内边距
+cellspacing：设置单元格间距
+colspan：合并相邻的单元格
+rowspan：合并相邻的行
+width：设置表格宽度
+height：设置表格高度
+align：设置表格水平对齐方式
+valign：设置表格垂直对齐方式
+bgcolor：设置表格背景色
+bordercolor：设置表格边框颜色
+background：设置表格背景图片
+
+HTML5表格标签及属性的使用方法请参阅HTML5表格标签及属性的详细介绍。
+
+表格基本结构：
+
+HTML5表格的基本结构如下：
+
+```
+<table>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+    <tr>
+      <td>Data 4</td>
+      <td>Data 5</td>
+      <td>Data 6</td>
+    </tr>
+  </tbody>
+</table>
+表格：<tab1</tab1>
+
+表格可以包含表头和数据两部分。表头部分使用<thead>标签定义，数据部分使用<tbody>标签定义。
+
+表头：<thead></thead>
+
+表头可以包含表头单元格，表头单元格可以包含文本、图片、链接、表单控件等内容。表头单元格的定义如下：
+
+```
+<th>Header 1</th>
+```
+
+
+数据：<tbody></tbody>
+
+数据可以包含数据单元格，数据单元格可以包含文本、图片、链接、表单控件等内容。数据单元格的定义如下：
+
+```
+<td>Data 1</td>
+```
+
+行：<tr></tr>
+
+行可以包含表头单元格和数据单元格。行的定义如下：
+
+```
+<tr>
+  <th>Header 1</th>
+  <th>Header 2</th>
+  <th>Header 3</th>
+</tr>
+```
+
+单元格：<td></td>
+
+单元格可以包含文本、图片、链接、表单控件等内容。单元格的定义如下：
+
+```
+<td>Data 1</td>
+```
+
+单元格的属性：
+
+colspan：设置单元格横向合并的单元格数
+rowspan：设置单元格纵向合并的单元格数
+align：设置单元格水平对齐方式
+valign：设置单元格垂直对齐方式
+width：设置单元格宽度
+height：设置单元格高度
+
+表格标题：
+
+表格标题可以定义表格的标题，并与表格内容分离。表格标题的定义如下：
+
+```
+<caption>Table Caption</caption>
+```
+
+表格边框：
+
+表格边框可以设置表格的边框宽度、边框颜色。表格边框的定义如下：
+
+```
+border="1"
+bordercolor="#000000"
+```
+
+
+表格背景：
+
+表格背景可以设置表格的背景颜色、背景图片。表格背景的定义如下：
+
+```
+bgcolor="#FFFFFF"
+background="image.jpg"
+```
+
+上述代码定义了一个带有表头的表格，其中包含3个表头单元格，2个数据单元格。表头单元格使用<th>标签定义，数据单元格使用<td>标签定义。表格内容使用<tbody>标签包裹。
+
+合并行：
+
+rowspan属性可以设置单元格纵向合并的单元格数。
+
+```
+<td rowspan="2">Data 1</td>
+<td>Data 2</td>
+<td>Data 3</td>
+```
+
+
+合并列：
+
+colspan属性可以设置单元格横向合并的单元格数。
+
+```
+<td>Data 1</td>
+<td>Data 2</td>
+<td colspan="2">Data 3</td>

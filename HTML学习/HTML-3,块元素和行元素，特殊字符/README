@@ -1,0 +1,79 @@
+块元素和行元素的区别：
+
+块元素和行元素是HTML中两个最基本的元素类型。    
+
+块元素：
+
+div、p、h1~h6、ul、ol、li、dl、dt、dd、table、form、header、footer、section、nav、article、aside、details、dialog、figure、figcaption、video、audio、canvas等
+
+- 独占一行
+- 宽度默认是父元素宽度的100%
+- 高度默认和内容的高度一致
+- 内边距和外边距可以控制元素的位置
+
+
+行元素：
+
+- 占据一行
+- 宽度默认和内容的宽度一致
+- 高度默认和内容的高度一致
+- 内边距和外边距只能控制元素的位置
+
+行内元素：
+
+strong、em、a、span、img、input、select、button、label、textarea等
+
+- 不能独占一行
+- 宽度默认和内容的宽度一致
+- 高度默认和内容的高度一致
+- 内边距和外边距只能控制元素的位置
+特殊符号：
+
+- &nbsp;：空格
+- &lt;：小于号
+- &gt;：大于号
+- &amp;：和号
+- &quot;：引号
+- &copy;：版权符号      
+
+HTML特殊字符：
+
+ 1.双引号：&quot;
+ 2.单引号：&apos;
+ 3.大于号：&gt;
+ 4.小于号：&lt;
+ 5.和号：&amp;
+ 6.空格：&nbsp;
+ 7.版权符号：&copy;
+ 8.左单引号：&lsquo;
+ 9.右单引号：&rsquo;
+ 10.乘号：&times;
+ 11.除号：&divide;
+ 12.冒号：&colon;
+ 13.省略号：&hellip;
+ 14.分号：&semi;
+ 15.感叹号：&excl;
+ 16.问号：&quest;
+ 17.省略号：&iquest;
+ 18.感叹号：&iexcl;
+ 19.百分号：&percnt;
+ 20.美元符号：&dollar;
+ 21.英镑符号：&pound;
+ 22.欧元符号：&euro;
+ 23.货币符号：&curren;
+ 24.注册商标：&reg;
+ 25.商标：&trade;
+ 26.下划线：&ndash;
+ 27.破折号：&mdash;
+ 28.连字符：&minus;
+ 29.分数符号：&frac12;
+ 30.分数符号：&frac14;
+ 31.分数符号：&frac34;
+ 32.左双引号：&ldquo;
+ 33.右双引号：&rdquo;
+ 36.左尖括号：&lsaquo;
+ 37.右尖括号：&rsaquo;
+ 38.左单引号：&laquo;
+ 39.右单引号：&raquo;
+ 40.左双引号：&ldblquot;
+ 41.度：&deg;

@@ -1,0 +1,62 @@
+ HTML 常用标签：
+        粗体标签：<b>粗体文本</b> 或者 <strong>粗体文本</strong>
+        斜体标签：<i>斜体文本</i> 或者 <em>斜体文本</em> <icte>斜体文本</icte>
+        删除线标签：<del>删除线文本</del>
+        下划线标签：<u>下划线文本</u>
+        超链接标签：<a href="网址">链接文本</a>
+        图片标签：<img src="图片路径" alt="图片描述">
+        块引用标签：<blockquote>引用内容</blockquote>
+        列表标签：<ul>无序列表</ul> <ol>有序列表</ol> <li>列表项</li>
+        表格标签：<table>表格内容</table> <tr>表格行</tr> <td>表格单元格</td>
+        水平线标签：<hr>
+        上下标标签：<sup>上标</sup> <sub>下标</sub>
+        中划线标签：<center>居中文本</center>
+        字体颜色标签：<font color="颜色名称">字体颜色</font>
+        字体大小标签：<font size="字体大小">字体大小</font>
+        
+        <!-- 字体风格标签：<font style="字体风格">字体风格</font> -->
+        字体变体标签：<font face="字体名称">字体变体</font>
+        注释标签：<!-- 注释内容 -->
+        换行标签：<br>
+        标题标签：<h1>标题1</h1> <h2>标题2</h2> <h3>标题3</h3> <h4>标题4</h4> <h5>标题5</h5> <h6>标题6</h6>
+        字体标签：<font face="Arial">字体内容</font>
+        颜色标签：<font color="red">颜色内容</font>
+        大小标签：<font size="3">大小内容</font>
+        斜体标签：<i>斜体内容</i>
+        粗体标签：<b>粗体内容</b>
+        加粗标签：<strong>加粗内容</strong>
+        斜体加粗标签：<em>斜体加粗内容</em>
+        缩写标签：<abbr title="缩写内容">缩写词</abbr>
+        首字母大写标签：<cite>首字母大写内容</cite>
+        引用标签：<q>引用内容</q>
+        定义标签：<dfn>定义内容</dfn>
+        缩写标签：<abbr title="缩写内容">缩写词</abbr>
+        时间标签：<time datetime="日期时间">时间内容</time>
+        代码标签：<code>代码内容</code>
+        变量标签：<var>变量内容</var>
+        键盘标签：<kbd>键盘输入</kbd>
+        预格式化标签：<pre>预格式化内容</pre>
+        块级元素标签：<div>块级元素</div>
+        行内元素标签：<span>行内元素</span>
+        换行标签：<br>
+        标题标签：<h1>标题1</h1> <h2>标题2</h2> <h3>标题3</h3> <h4>标题4</h4> <h5>标题5</h5> <h6>标题6</h6>
+        字体标签：<font face="Arial">字体内容</font>
+        颜色标签：<font color="red">颜色内容</font>
+        大小标签：<font size="3">大小内容</font>
+        大字号标签：<big>大字号文本</big>
+        小字号标签：<small>小字号文本</small>
+        预格式化标签：<pre>预格式化文本</pre>
+        块级元素标签：<div>块级元素</div>
+        行内元素标签：<span>行内元素</span>
+        字体背景颜色标签：<font style="background-color:颜色名称">字体背景颜色</font>
+
+        代码标签：<code>代码内容</code>
+        变量标签：<var>变量内容</var>
+        键盘标签：<kbd>键盘输入</kbd>
+        预格式化标签：<pre>预格式化内容</pre>
+
+        计算机输出标签：<samp>计算机输出</samp>
+        计算机输入标签：<kbd>计算机输入</kbd>
+        计算机代码标签：<code>计算机代码</code>
+        计算机变量标签：<var>计算机变量</var>
+        计算机命令标签：<samp>计算机命令</samp> 

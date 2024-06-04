@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Table</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border-bottom: 1px solid #ddd;
+		}
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h2>HTML Table</h2>
+	<table>
+        <caption>表格标题</caption>
+        <!-- 表头<thead> -->
+		<thead>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Age</th>
+				<th>City</th>
+			</tr>
+		</thead>
+        <!-- 表身<thbody> -->
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>Doe</td>
+				<td>25</td>
+				<td>New York</td>
+			</tr>
+			<tr>
+				<td>Jane</td>
+				<td>Smith</td>
+				<td>30</td>
+				<td>Los Angeles</td>
+			</tr>
+			<tr>
+				<td>Bob</td>
+				<td>Johnson</td>
+				<td>40</td>
+				<td>Chicago</td>
+			</tr>
+		</tbody>
+        <!-- 表尾<tfoot> -->
+		<tfoot>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Age</th>
+				<th>City</th>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
