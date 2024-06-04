@@ -1,0 +1,34 @@
+CSS文本样式
+
+CSS文本样式是指通过CSS设置文本的各种样式，包括字体、字号、颜色、对齐方式、行高、背景色、边框、阴影、渐变、文本装饰等。
+
+CSS文本样式的应用场景有很多，比如：
+
+- 美化网页的字体、字号、颜色、布局、版式、阅读体验；
+- 实现网页的搜索引擎优化（SEO）；
+- 实现网页的可访问性；  
+- 实现网页的打印样式；
+- 实现网页的多语言支持；
+- 实现网页的响应式设计；
+- 实现网页的动画效果；
+等等
+
+文本样式属性：
+
+首行缩进：text-indent
+
+水平对齐：text-align
+
+垂直对齐：vertical-align
+
+文本修饰：text-decoration
+
+大小写：text-transform
+
+行高：line-height
+
+字母间距，词间距：letter-spacing、word-spacing
+
+字体：font-family、font-size、font-weight、font-style、font-variant
+
+
