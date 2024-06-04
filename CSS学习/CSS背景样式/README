@@ -1,0 +1,79 @@
+CSS背景样式
+
+CSS背景样式主要包括以下几种：
+
+- 背景颜色：通过background-color属性设置背景颜色。
+- 背景图片：通过background-image属性设置背景图片。
+- 背景重复：通过background-repeat属性设置背景图片的重复方式。
+- 背景位置：通过background-position属性设置背景图片的位置。
+- 背景附加：通过background-attachment属性设置背景图片是否固定或者随着页面的滚动而移动。
+- 背景大小：通过background-size属性设置背景图片的大小。
+- 背景阴影：通过box-shadow属性设置背景的阴影效果。
+- 背景渐变：通过background-image和background-color属性结合使用，可以设置背景的渐变效果。
+
+
+背景图片样式属性：
+
+- background-image: url(image.jpg); /* 设置背景图片 */
+- background-repeat: repeat; /* 设置背景图片的重复方式，默认值是repeat */
+- background-repeat: no-repeat; /* 设置背景图片的重复方式，背景图片不重复 */
+- background-repeat: repeat-x; /* 设置背景图片的重复方式，背景图片沿水平方向重复 */
+- background-repeat: repeat-y; /* 设置背景图片的重复方式，背景图片沿垂直方向重复 */
+- background-repeat: space; /* 设置背景图片的重复方式，背景图片沿水平方向和垂直方向都重复 */
+- background-repeat: round; /* 设置背景图片的重复方式，背景图片沿水平方向和垂直方向都重复，并有圆角 */
+- background-position: top left; /* 设置背景图片的位置，默认值是center center */
+- background-position: 0% 0%; /* 设置背景图片的位置，百分比值 */
+- background-position: 10px 20px; /* 设置背景图片的位置，像素值 */
+- background-attachment: scroll; /* 设置背景图片是否固定或者随着页面的滚动而移动，默认值是scroll */
+- background-attachment: fixed; /* 设置背景图片是否固定或者随着页面的滚动而移动 */
+
+背景颜色属性：
+background-color: #000000; /* 设置背景颜色 */
+
+背景大小属性：
+background-size: cover; /* 设置背景图片的大小，背景图片完全覆盖背景区域 */
+background-size: contain; /* 设置背景图片的大小，背景图片完全适应背景区域 */
+background-size: 100px 100px; /* 设置背景图片的大小，宽高值 */
+
+背景阴影属性：
+box-shadow: 10px 10px 5px #888888; /* 设置背景的阴影效果，水平偏移量、垂直偏移量、模糊半径、阴影颜色 */
+
+背景渐变属性：
+background: linear-gradient(to bottom, #ff0000, #00ff00); /* 设置背景的渐变效果，从上到下 */
+background: linear-gradient(to right, #ff0000, #00ff00); /* 设置背景的渐变效果，从左到右 */
+background: linear-gradient(to bottom right, #ff0000, #00ff00); /* 设置背景的渐变效果，从右下到左上 */
+background: linear-gradient(to bottom left, #ff0000, #00ff00); /* 设置背景的渐变效果，从左下到右上 */
+background: radial-gradient(#ff0000, #00ff00); /* 设置背景的渐变效果，径向渐变 */
+background: repeating-linear-gradient(to bottom, #ff0000, #00ff00 10px); /* 设置背景的渐变效果，重复的线性渐变 */
+background: repeating-radial-gradient(#ff0000, #00ff00 10px); /* 设置背景的渐变效果，重复的径向渐变 */
+
+背景图片重复属性：
+background-repeat: repeat; /* 设置背景图片的重复方式，上下平铺，默认值是repeat */
+background-repeat: no-repeat; /* 设置背景图片的重复方式，背景图片不重复,不平铺 */
+background-repeat: repeat-x; /* 设置背景图片的重复方式，背景图片沿水平（x轴）方向重复 */
+background-repeat: repeat-y; /* 设置背景图片的重复方式，背景图片沿垂直（y轴）方向重复 */
+background-repeat: space; /* 设置背景图片的重复方式，背景图片沿水平方向和垂直方向都重复 */
+background-repeat: round; /* 设置背景图片的重复方式，背景图片沿水平方向和垂直方向都重复，并有圆角 */    
+
+背景图片位置属性：
+background-position: top left; /* 设置背景图片的位置，默认值是center center */
+background-position: 0% 0%; /* 设置背景图片的位置，百分比值 */
+background-position: 10px 20px; /* 设置背景图片的位置，像素值 */
+
+背景图片固定属性：
+background-attachment: scroll; /* 设置背景图片是否固定或者随着页面的滚动而移动，默认值是scroll */
+background-attachment: fixed; /* 设置背景图片是否固定或者随着页面的滚动而移动 */
+  关键字取值：
+
+
+- top：背景图片位于元素的顶部。
+- bottom：背景图片位于元素的底部。
+- left：背景图片位于元素的左侧。
+- right：背景图片位于元素的右侧。
+- center：背景图片位于元素的中心。
+- top left：背景图片位于元素的左上角。
+- top right：背景图片位于元素的右上角。
+- bottom left：背景图片位于元素的左下角。
+- bottom right：背景图片位于元素的右下角。
+- 百分比值：百分比值是相对于元素的宽度和高度的，比如50%就是元素宽度的一半，100%就是元素的宽度和高度。
+- 像素值：像素值是相对于元素的宽度和高度的，比如10px就是元素宽度的一半，20px就是元素的宽度和高度。

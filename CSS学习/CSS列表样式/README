@@ -1,0 +1,108 @@
+CSS列表样式
+CSS列表样式是指通过CSS设置HTML列表的样式，包括列表项的排列方式、列表项的缩进、列表项的对齐方式、列表项的间距、列表项的背景色、列表项的边框、列表项的圆角、列表项的阴影、列表项的字体颜色、字体大小、字体粗细、字体样式等。  
+
+CSS列表样式的应用场景有：  
+
+- 列表项的排列方式：有序列表、无序列表、自定义列表等。
+- 列表项的缩进：通过CSS设置列表项的左侧缩进、右侧缩进、左右缩进等。
+- 列表项的对齐方式：通过CSS设置列表项的水平对齐方式、垂直对齐方式等。
+- 列表项的间距：通过CSS设置列表项的上下间距、左右间距等。
+- 列表项的背景色：通过CSS设置列表项的背景色。
+- 列表项的边框：通过CSS设置列表项的边框样式、边框宽度、边框颜色等。
+- 列表项的圆角：通过CSS设置列表项的圆角半径。
+- 列表项的阴影：通过CSS设置列表项的阴影样式、阴影颜色、阴影偏移量等。
+- 列表项的字体颜色：通过CSS设置列表项的字体颜色。
+- 列表项的字体大小：通过CSS设置列表项的字体大小。
+
+
+定义列表项符号：
+
+- 有序列表：有序列表的符号通常是数字或字母，CSS通过list-style-type属性设置列表项符号。
+- 无序列表：无序列表的符号通常是圆点、加号或其他符号，CSS通过list-style-type属性设置列表项符号。
+- 自定义列表：自定义列表的符号可以是图片、颜色、字母等，CSS通过list-style-image、list-style-color、list-style-type属性设置列表项符号。
+
+设置列表项缩进：
+
+- 通过CSS设置列表项的左侧缩进、右侧缩进、左右缩进等。
+
+设置列表项对齐方式：
+
+- 通过CSS设置列表项的水平对齐方式、垂直对齐方式等。
+
+
+设置列表项间距：
+
+- 通过CSS设置列表项的上下间距、左右间距等。
+
+列表项属性取值：
+
+- list-style-type：设置列表项符号，包括数字、字母、圆点、加号、自定义图片等。
+- list-style-image：设置自定义列表项符号的图片。
+- list-style-position：设置列表项符号的位置，包括inside、outside等。
+- list-style-color：设置列表项符号的颜色。
+- list-style-width：设置列表项符号的宽度。
+- list-style-height：设置列表项符号的高度。
+- list-style-padding：设置列表项符号的内边距。
+- list-style-margin：设置列表项符号的外边距。
+- list-style-border：设置列表项符号的边框。
+- list-style-border-radius：设置列表项符号的圆角半径。
+- list-style-box-shadow：设置列表项符号的阴影样式、阴影颜色、阴影偏移量等。
+
+list-style-type属性取值：
+
+- disc：实心圆点。
+- circle：空心圆点。
+- square：实心方块。
+- decimal：数字。
+- decimal-leading-zero：数字，带有前导零。
+- lower-roman：小写罗马数字。
+- upper-roman：大写罗马数字。
+- lower-alpha：小写字母。
+- upper-alpha：大写字母。
+- none：无符号。
+
+
+list-style-position属性取值：
+
+- inside：将列表项符号放在内容区内。
+- outside：将列表项符号放在内容区外。   
+
+list-style-image属性取值：
+
+- url(image.jpg)：设置自定义列表项符号的图片。
+
+list-style-color属性取值：
+
+- #RRGGBB：设置列表项符号的颜色，RR、GG、BB分别代表红、绿、蓝的十六进制值。
+- transparent：设置透明的颜色。
+
+list-style-width、list-style-height属性取值：
+
+- length：设置列表项符号的宽度或高度。
+- auto：自动设置列表项符号的宽度或高度。
+
+list-style-padding属性取值：
+
+- length：设置列表项符号的内边距。
+- inherit：继承父元素的内边距。
+
+list-style-margin属性取值：
+
+- length：设置列表项符号的外边距。
+- inherit：继承父元素的外边距。
+
+list-style-border属性取值：
+
+- border-style：设置列表项符号的边框样式，包括none、hidden、dotted、dashed、solid、double、groove、ridge、inset、outset等。
+- border-width：设置列表项符号的边框宽度。
+- border-color：设置列表项符号的边框颜色。
+
+list-style-border-radius属性取值：
+
+- length：设置列表项符号的圆角半径。
+- inherit：继承父元素的圆角半径。
+
+list-style-box-shadow属性取值：
+
+- none：无阴影。
+- inherit：继承父元素的阴影样式。

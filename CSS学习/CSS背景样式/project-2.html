@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Background Styles</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        /*背景重复属性*/
+        /*background-repeat: repeat-x | repeat-y | no-repeat | inherit;*/
+        /*background-repeat: repeat-x;*/
+        /*background-repeat: repeat-y;*/
+        /*background-repeat: no-repeat;*/
+        div {
+            width: 441px;
+            height: 461px;
+            border: 1px solid silver;
+            background-image: url(4K风景/bodybg.jpg);
+        }
+        #div1 {
+            background-repeat: repeat-x;
+        }
+        #div2 {
+            background-repeat: repeat-y;
+        }
+        #div3 {
+            background-repeat: no-repeat;
+        }
+        #div4 {
+            background-repeat: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+</body>
+</html>

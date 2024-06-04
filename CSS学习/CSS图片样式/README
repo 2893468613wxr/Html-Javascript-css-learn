@@ -1,0 +1,345 @@
+CSS图片样式
+
+CSS图片样式主要包括：
+
+
+
+
+文字环绕图片：
+
+元素向左浮动：float: left;
+
+元素向右浮动：float: right;
+
+```
+img {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+```
+
+
+
+
+- 图片居中
+- 图片缩放  
+- 图片边框  
+- 图片阴影  
+- 图片旋转  
+- 图片透明度  
+- 图片滤镜  
+- 图片轮廓  
+- 图片切割  
+- 图片替换  
+- 图片动画  
+- 图片交叉fade  
+- 图片懒加载  
+- 图片懒加载库  
+- 图片懒加载插件  
+- 图片懒加载实现  
+- 图片懒加载原理  
+- 图片懒加载优化  
+- 图片懒加载案例  
+- 图片懒加载实践  
+- 图片懒加载原理解析  
+- 图片懒加载优化方案  
+- 图片懒加载实践案例  
+- 图片懒加载实践优化  
+- 图片懒加载实践经验  
+- 图片懒加载实践总结  
+- 图片懒加载实践心得  
+
+CSS图片样式学习资料：
+
+- 《CSS权威指南》第四版 第10章 图片样式  
+- 《CSS权威指南》第四版 第11章 图片懒加载  
+- 《CSS权威指南》第四版 第12章 图片滤镜  
+- 《CSS权威指南》第四版 第13章 图片动画  
+- 《CSS权威指南》第四版 第14章 图片交叉fade  
+- 《CSS权威指南》第四版 第15章 图片替换  
+- 《CSS权威指南》第四版 第16章 图片轮廓  
+- 《CSS权威指南》第四版 第17章 图片切割  
+- 《CSS权威指南》第四版 第18章 图片旋转  
+- 《CSS权威指南》第四版 第19章 图片透明度  
+- 《CSS权威指南》第四版 第20章 图片阴影  
+- 《CSS权威指南》第四版 第21章 图片缩放  
+- 《CSS权威指南》第四版 第22章 图片居中  
+- 《CSS权威指南》第四版 第23章 图片懒加载实践  
+- 《CSS权威指南》第四版 第24章 图片懒加载优化  
+- 《CSS权威指南》第四版 第25章 图片懒加载案例  
+- 《CSS权威指南》第四版 第26章 图片懒加载实践案例  
+
+css图片样式学习网站：
+
+- w3school：https://www.w3school.com.cn/css/css3_images.asp  
+- 菜鸟教程：http://www.runoob.com/css/css-images.html  
+- 阮一峰：http://www.ruanyifeng.com/blog/2014/05/css_image_optimization.html  
+- 张鑫旭：http://www.zhangxinxu.com/wordpress/2013/12/lazy-load-images-using-jquery-plugin/  
+- 张鑫旭：http://www.zhangxinxu.com/wordpress/2013/12/lazy-load-images-using-vanilla-javascript/  
+- 张鑫旭：http://www.zhangxinxu.com/wordpress/2013/12/lazy-load-images-using-intersection-observer/  
+- 张鑫旭：http://www.zhangxinxu.com/wordpress/2013/12/lazy-load-images-using-lazyload-js/  
+
+css图片样式学习视频：
+
+- 《CSS图片样式》课程视频：https://www.bilibili.com/video/av28277414/  
+- 《CSS图片懒加载实践》课程视频：https://www.bilibili.com/video/av28277415/  
+- 《CSS图片滤镜》课程视频：https://www.bilibili.com/video/av28277416/  
+- 《CSS图片动画》课程视频：https://www.bilibili.com/video/av28277417/  
+- 《CSS图片交叉fade》课程视频：https://www.bilibili.com/video/av28277418/  
+- 《CSS图片替换》课程视频：https://www.bilibili.com/video/av28277419/  
+- 《CSS图片轮廓》课程视频：https://www.bilibili.com/video/av28277420/  
+- 《CSS图片切割》课程视频：https://www.bilibili.com/video/av28277421/  
+- 《CSS图片旋转》课程视频：https://www.bilibili.com/video/av28277422/  
+- 《CSS图片透明度》课程视频：https://www.bilibili.com/video/av28277423/  
+
+图片样式：
+
+-图片大小：
+
+```
+img { width: 100px; height: 100px; }
+```
+
+-图片居中： 
+
+```
+img { display: block; margin: 0 auto; }
+```
+
+
+-图片缩放：
+
+```
+img { width: 100%; height: auto; }
+```
+
+-图片边框：
+
+```
+img { border: 1px solid #000; }
+```
+
+-图片阴影：
+
+```
+img { box-shadow: 2px 2px 5px #888888; }
+```
+
+-图片旋转：
+
+```
+img { transform: rotate(90deg); }
+```
+
+-图片透明度：
+
+```
+img { opacity: 0.5; }
+```
+
+-图片滤镜：
+
+```
+img { filter: blur(5px); }
+```
+
+-图片轮廓：
+
+```
+img { outline: 1px solid #000; }
+```
+
+-图片切割：
+
+```
+img { clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); }
+```
+
+
+图片懒加载：
+
+-图片懒加载原理：
+
+```
+<img src="default.jpg" data-src="real.jpg">
+```
+
+-图片懒加载实现：
+
+```
+<script>
+window.addEventListener('load', function() {
+  var imgs = document.querySelectorAll('img[data-src]');
+  for (var i = 0; i < imgs.length; i++) {
+    var img = imgs[i];
+    img.src = img.getAttribute('data-src');
+  }
+});
+</script>
+```
+
+-图片懒加载优化：
+
+```
+<script>
+window.addEventListener('load', function() {
+  var imgs = document.querySelectorAll('img[data-src]');
+  var lazyload = function() {
+    for (var i = 0; i < imgs.length; i++) {
+      var img = imgs[i];
+      var rect = img.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        img.src = img.getAttribute('data-src');
+        img.removeAttribute('data-src');
+      }
+    }
+  };
+  lazyload();
+  window.addEventListener('scroll', lazyload);
+});
+</script>
+```
+
+
+图片滤镜：
+
+- 灰度：  
+
+```
+img { filter: grayscale(1); }  /* 0~1 */
+```
+
+- 反色：    
+
+```
+img { filter: invert(1); }
+```
+
+
+图片动画：
+
+- 旋转：  
+
+```
+img {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+```
+
+- 闪烁：  
+
+```
+img {
+  animation: flash 1s linear infinite;
+}
+
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+```
+
+- 缩放：  
+
+```
+img {
+  animation: zoom 2s linear infinite;
+}
+
+@keyframes zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.5); }
+}
+```
+
+- 翻转：  
+
+```
+img {
+  animation: flip 2s linear infinite;
+}
+
+@keyframes flip {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(180deg); }
+}
+```
+
+- 倾斜：  
+
+```
+img {
+  animation: skew 2s linear infinite;
+}
+
+@keyframes skew {
+  from { transform: skew(0deg, 0deg); }
+  to { transform: skew(30deg, 30deg); }
+}
+```
+
+- 波动：  
+
+```
+img {
+  animation: wave 2s linear infinite;
+}
+
+@keyframes wave {
+  from { transform: translateX(0); }
+  to { transform: translateX(10px); }
+}
+```
+
+图片交叉fade：
+
+```
+img {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+img.fade-in {
+  opacity: 1;
+}
+```
+
+图片替换：
+
+```
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+```
+
+图片轮廓：
+
+```
+img {
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+```
+
+图片切割：
+
+```
+img {
+  width: 100px;
+  height: 100px;
+  clip-path: circle(50% at 50% 50%);
+}
+```
+

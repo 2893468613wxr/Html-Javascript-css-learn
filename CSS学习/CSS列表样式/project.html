@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>CSS列表样式</title>
+    <style type="text/css">
+        /* 无序列表 */
+
+        #ul2 {
+            list-style-type: none; /* 默认值 */ 
+        }
+
+        #ul1 {
+            list-style-type: circle; /* 默认值 */ 
+        }
+        /* 有序列表 */
+        ol {
+            list-style-type: lower-roman; /* 默认值 */
+        }
+        /* 自定义列表 */
+        dl {
+            list-style-type: circle; /* 默认值 */
+        }
+        /* 自定义列表项目符号 */
+        dt {
+            font-weight: bold;
+        }
+        dd {
+            margin-left: 20px; /* 左侧缩进 */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS列表样式</h1>
+    <h2>无序列表</h2>
+    <ul id="ul1">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>橘子</li>
+    </ul>
+    <h2>无序列表</h2>
+    <ul id="ul2">   
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>橘子</li>
+    </ul>
+    <h2>有序列表</h2>
+    <ol>
+        <li>第一项</li>
+        <li>第二项</li>
+        <li>第三项</li>
+    </ol>
+    <h2>自定义列表</h2>
+    <dl>
+        <dt>水果</dt>
+        <dd>苹果</dd>
+        <dd>香蕉</dd>
+        <dd>橘子</dd>
+    </dl>
+</body>
+</html>

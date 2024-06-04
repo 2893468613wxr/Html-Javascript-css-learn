@@ -1,0 +1,49 @@
+CSS边框样式：
+
+CSS边框样式主要包括边框的宽度、样式、颜色等属性。
+
+边框宽度：
+
+边框宽度属性设置边框的宽度。
+
+边框样式：
+
+边框样式属性设置边框的样式，如实线、虚线、双线、点线等。
+
+边框颜色：
+
+边框颜色属性设置边框的颜色。
+
+CSS边框样式的语法格式如下：
+
+```
+border: width style color;
+```
+
+其中，width表示边框的宽度，可以是像素值或相对值，style表示边框的样式，可以是实线、虚线、双线、点线等，color表示边框的颜色，可以是十六进制颜色值、颜色名、RGB值或HSL值。
+
+CSS边框样式的示例如下：
+
+```
+/* 边框宽度 */
+border-width: 1px;
+
+/* 边框样式 */
+border-style: solid;
+实线：border-style: solid;
+虚线：border-style: dashed;
+双线：border-style: double;
+点线：border-style: dotted;
+
+/* 边框颜色 */
+border-color: #000000;
+
+/* 边框宽度、样式、颜色 */
+border: 1px solid #000000;
+```
+必须同时设置才有效。
+
+上边框：border-top: 1px solid #000000;
+下边框：border-bottom: 1px solid #000000;
+左边框：border-left: 1px solid #000000;
+右边框：border-right: 1px solid #000000;
