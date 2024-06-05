@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>自定义鼠标样式</title>
+
+	<style type="text/css">
+		div {
+            
+			width: 100px;
+			height: 30px;  
+            line-height: 30px;
+            text-align: center;
+            background-color: hotpink;
+            color: white;
+            font-size: 14px;
+            border: 2px solid black;
+            border-spacing: 10px;
+        }
+        #div_default {
+            cursor: url(cursor-main/cursor-main/cursor_nordik/nordik/白/diag11.cur), default;
+        }
+        #dive_pointer {
+            cursor: url(cursor-main/cursor-main/cursor_nordik/nordik/黑/move.cur), pointer;
+        }
+    </style>
+</head>
+<body>
+	<div id="div_default">默认鼠标样式</div>
+	<div id="dive_pointer">指针鼠标样式</div>
+</body>
+</html>
