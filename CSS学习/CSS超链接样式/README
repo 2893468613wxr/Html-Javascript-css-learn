@@ -1,0 +1,130 @@
+超链接伪类：
+:link - 未访问的链接
+:visited - 已访问的链接
+:hover - 鼠标悬停在链接上
+:active - 链接被点击时
+
+CSS代码：
+a:link {
+  color: #0000FF; /* 未访问的链接 */
+}
+a:visited {
+  color: #FF0000; /* 已访问的链接 */
+}
+a:hover {
+  text-decoration: underline; /* 鼠标悬停在链接上 */
+}
+a:active {
+  color: #FF00FF; /* 链接被点击时 */
+}
+
+了解:hover 
+    :hover伪类可以定义任何元素的鼠标悬停状态，包括链接、按钮、输入框、图像等。
+    它可以用来为链接添加下划线、改变颜色、显示提示信息等。
+    常用属性：text-decoration、color、cursor。
+
+    :hover用于div、a、img、input等元素，可以为其添加鼠标悬停时的样式。
+    常用属性：background-color、color、border、padding、margin、opacity、filter。
+
+    示例：
+
+    /* 鼠标悬停时，div背景色变为红色 */
+    div:hover {
+      background-color: red;
+    }
+
+    /* 鼠标���停时，a文字颜色变为蓝色 */
+    a:hover {
+      color: blue;
+    }
+
+
+    /* 鼠标悬停时，img图片变为透明 */
+    img:hover {
+      opacity: 0.5;
+    }
+
+    /* 鼠标悬停时，input边框变为粗线 */
+    input:hover {
+      border: 2px solid red;
+    }
+
+
+
+鼠标样式：
+
+    浏览器鼠标样式属性：
+
+        1. cursor - 设置鼠标形状，如默认的箭头、手型、指示链接、拖放等。
+        2. pointer-events - 设置元素是否可以接收鼠标事件。
+        3. user-select - 设置元素是否可以被选中。
+        4. opacity - 设置元素的透明度。
+        5. filter - 设置元素的滤镜效果。
+        6. outline - 设置元素的轮廓样式。
+        7. resize - 设置元素是否可以调整大小。
+        8. user-drag - 设置元素是否可以拖动。
+        9. -webkit-user-drag - 设置元素是否可以拖动。
+        10. -webkit-touch-callout - 设置元素是否可以显示默认的上下文菜单。
+        11. -webkit-tap-highlight-color - 设置元素的点击高亮颜色。
+        12. -webkit-touch-callout - 设置元素是否可以显示默认的上下文菜单。
+        13. -webkit-user-select - 设置元素是否可以被选中。
+        14. -moz-user-select - 设置元素是否可以被选中。
+        15. -ms-user-select - 设置元素是否可以被选中。
+
+        鼠标样式属性取值：
+
+
+        1. default - 默认的鼠标样式，通常是箭头。
+        2. none - 无鼠标样式。
+        3. context-menu - 右键菜单。
+        4. help - 帮助提示。
+        5. pointer - 指针。
+        6. progress - 进度条。
+        7. wait - 等待指示。
+        8. cell - 单元格。
+        9. crosshair - 十字线。
+        10. text - 文本。
+        11. vertical-text - 垂直文本。
+        12. alias - 光标。
+        13. copy - 复制。
+        14. move - 移动。
+        15. no-drop - 不可放置。
+        16. not-allowed - 不可用。
+        17. e-resize - 向右调整。
+        18. n-resize - 向下调整。
+        19. ne-resize - 向下-右调整。
+        20. nw-resize - 向下-左调整。
+        21. s-resize - 向上调整。
+        22. se-resize - 向上-右调整。
+        23. sw-resize - 向上-左调整。
+        24. w-resize - 向左调整。
+        25. ew-resize - 向左右调整。
+        26. ns-resize - 向上下调整。
+        27. nesw-resize - 向下-右-上-左调整。
+        28. nwse-resize - 向下-左-上-右调整。
+        29. col-resize - 列调整。
+        30. row-resize - 行调整。
+        31. all-scroll - 全屏滚动。
+        32. zoom-in - 放大。
+        33. zoom-out - 缩小。
+        34. grab - 手柄。
+        35.move - 移动。
+        36. grabbing - 正在拖动。
+        37. text - 文本。
+
+
+
+    /* 鼠标悬停时，鼠标样式变为手型 */
+    a:hover {
+      cursor: pointer;
+    }
+
+    /* 鼠标悬停时，鼠标样式变为指示链接 */
+    a:hover {
+      cursor: help;
+    }
+
+    /* 鼠标悬停时，鼠标样式变为拖放 */
+    img:hover {
+      cursor: move;
+    }
