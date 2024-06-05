@@ -1,0 +1,194 @@
+盒子模型是CSS中最重要的概念之一，它定义了元素的位置和大小。
+
+CSS盒子模型由四个部分组成：边框、内边距、内容、外边距。
+
+border - 边框：边框是矩形框的边界，可以用来修饰元素的外观。
+
+padding - 内边距：内边距是内容与边框之间的距离，可以用来控制元素的填充。
+
+content - 内容：内容是元素的主要部分，可以包含文本、图像、视频等。
+
+margin - 外边距：外边距是元素与其周围元素之间的距离，可以用来控制元素的间距。
+
+
+
+CSS盒子模型的作用：
+
+CSS盒子模型可以帮助我们控制元素的位置和大小，通过设置边框、内边距、外边距等属性，可以让元素的位置和大小更加精准。
+
+CSS盒子模型的应用：
+
+CSS盒子模型的应用非常广泛，可以应用于各种场景，如布局、网页美化、响应式设计等。
+
+
+
+CSS盒子模型的基本规则：
+
+1. 盒子的宽度和高度决定了盒子的尺寸。
+
+2. 盒子的边框可以用来修饰元素的外观。
+
+3. 盒子的内边距可以用来控制元素的填充。
+
+4. 盒子的外边距可以用来控制元素的间距。
+
+5. 盒子的内边距、边框、内容、外边距的总和称为盒子的总宽度。
+
+6. 盒子的宽度和高度不包含内边距、边框、内容、外边距。
+
+7. 盒子的宽度和高度可以设置百分比值，也可以设置固定值。
+
+8. 盒子的宽度和高度可以设置最小值和最大值。
+
+9. 盒子的宽度和高度可以设置内容的宽度和高度。
+
+
+
+
+内容区属性：
+
+content - 内容区为盒子的内容。
+
+width - 内容区的宽度。
+
+height - 内容区的高度。
+
+min-width - 内容区的最小宽度。
+
+min-height - 内容区的最小高度。
+
+max-width - 内容区的最大宽度。
+
+max-height - 内容区的最大高度。
+
+box-sizing - 内容区的尺寸计算方式。
+
+border-box - 内容区为盒子的内容、内边距、边框。
+
+padding-box - 内容区为盒子的内容和内边距。
+
+content-box - 内容区为盒子的内容。
+
+
+
+box-sizing属性：
+
+box-sizing - 内容区的尺寸计算方式。
+
+border-box - 内容区为盒子的内容、内边距、边框。
+
+content-box - 内容区为盒子的内容，包括内容、内边距、边框。
+
+padding-box - 内容区为盒子的内容和内边距，不包括边框。
+
+border-box - 内容区为盒子的内容、内边距和边框。
+
+
+内边距属性：
+
+padding - 内边距。
+
+padding-top - 上内边距。        
+padding-right - 右内边距。
+padding-bottom - 下内边距。
+padding-left - 左内边距。
+
+
+
+边框属性：
+
+border - 边框。
+
+border-width - 边框宽度。
+
+border-style - 边框样式。
+
+border-color - 边框颜色。
+
+border-top - 上边框。
+
+border-right - 右边框。
+
+border-bottom - 下边框。
+
+border-left - 左边框。
+
+border-top-width - 上边框宽度。
+
+border-right-width - 右边框宽度。
+
+border-bottom-width - 下边框宽度。
+
+border-left-width - 左边框宽度。
+
+border-top-style - 上边框样式。
+
+border-right-style - 右边框样式。
+
+border-bottom-style - 下边框样式。
+
+border-left-style - 左边框样式。
+
+border-top-color - 上边框颜色。
+
+border-right-color - 右边框颜色。
+
+border-bottom-color - 下边框颜色。
+
+border-left-color - 左边框颜色。
+
+border-radius - 边框圆角。
+
+border-top-left-radius - 左上角边框圆角。
+
+border-top-right-radius - 右上角边框圆角。
+
+border-bottom-right-radius - 右下角边框圆角。
+
+border-bottom-left-radius - 左下角边框圆角。
+
+
+
+外边距属性：
+
+margin - 外边距。
+
+margin-top - 上外边距。
+
+margin-right - 右外边距。
+
+margin-bottom - 下外边距。
+
+margin-left - 左外边距。
+
+margin-collapse - 外边距折叠。
+
+margin-top-collapse - 上外边距折叠。
+
+margin-right-collapse - 右外边距折叠。
+
+margin-bottom-collapse - 下外边距折叠。
+
+margin-left-collapse - 左外边距折叠。
+
+margin-split - 外边距分割。
+
+margin-top-split - 上外边距分割。
+
+margin-right-split - 右外边距分割。
+
+margin-bottom-split - 下外边距分割。
+
+margin-left-split - 左外边距分割。
+
+
+只有块元素才有外边距属性，行内元素没有外边距属性。
+只有块元素才能设置width和height属性，行内元素只能设置内边距属性。
+
+浏览器审查元素的盒子模型：
+
+在浏览器中审查元素的盒子模型，可以看到元素的四个部分：边框、内边距、内容、外边距。
+
+边框：边框是矩形框的边界，可以用来修饰元素的外观。
+
+内边距：内边距是内容与边框之间的距离，可以用来控制元素的填充。  
