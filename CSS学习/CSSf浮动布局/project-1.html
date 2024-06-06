@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 没有设置浮动 -->
+    <meta charset="UTF-8">
+	<title></title>
+    <style>
+        /* 父元素设置浮动 */
+        #father {
+            width: 300px;
+            background-color: #0c6a9d;
+            border: 1px solid silver;
+        }
+        /* 子元素设置浮动 */
+        #father div {
+            padding: 10px;
+            margin: 15px;
+        }
+
+        #son1 {
+            background-color: hotpink;
+        }
+        #son2 {
+
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="father">   
+        <div id="son1">box1</div>
+        <div id="son2">box2</div>
+    </div>
+</body>
+</html>

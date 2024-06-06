@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>长方形区域布局</title>
+<style>
+  #father {
+    border: 1px solid black;
+    width: 822px;
+    height: 622px;
+    background-color: aqua;
+  }
+  #box-top {
+    width: 800px;
+    height: 100px;
+    margin: 10px;
+    background-color: yellow;
+  }
+  #box-bottom {
+    width: 800px;
+    height: 100px;
+    margin: 10px;
+    background-color: green;
+  }
+  #main {
+    margin: 10px;
+    height: 380px;
+    width: 800px;
+  }
+  #box-left {
+    float: left;
+    width: 595px;
+    height: 380px;
+    background-color: blue;
+  }
+  #box-right {
+    float: right;
+    width: 195px;
+    height: 380px;
+    background-color: red;
+  }
+  .clear {
+    clear: both;
+  }
+</style>
+</head>
+<body>
+    <div id="father">
+      <div id="box-top"></div>
+      <div id="main">
+        <div id="box-left"></div>
+        <div id="box-right"></div>
+        <div class="clear"></div>
+      </div>
+      <div id="box-bottom"></div>
+    </div>
+</body>
+</html>

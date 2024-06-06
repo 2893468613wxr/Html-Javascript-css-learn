@@ -1,0 +1,314 @@
+CSS浮动布局
+
+CSS浮动布局是一种简单而有效的布局方式，它可以将页面上的元素进行相对定位，并通过设置浮动来控制元素的位置。
+
+1. 什么是浮动？
+
+浮动是CSS中的一个属性，它可以使元素脱离文档流，并向左或向右移动，直到它的外边缘碰到包含框或另一个浮动元素的边框为止。
+
+2. 浮动的基本用法
+
+浮动的基本用法是通过设置元素的float属性为left或right，将元素从文档流中移除，并使其向左或向右移动，直到它的外边缘碰到包含框或另一个浮动元素的边框为止。
+
+
+float: 取值;
+
+
+取值：left | right | none
+
+left：元素向左浮动
+
+right：元素向右浮动
+
+
+
+none：元素不浮动，默认值
+
+例如：
+
+```
+<div class="box">
+  <div class="float">浮动元素</div>
+  <div class="content">内容元素</div>
+</div>
+```
+
+```
+.box {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.float {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+}
+
+.content {
+  background-color: #0f0;
+}
+```
+
+上面的代码中，.box元素设置了边框和内边距，.float元素设置了浮动属性为left，宽度为100px，高度为100px，背景色为红色。.content元素设置了背景色为绿色。
+
+当页面加载完成后，.box元素的宽度将会自动适应其包含的内容，而.float元素将会向左浮动，直到它碰到.content元素的边框为止。
+
+浮动元素的宽度默认是内容宽度，如果内容宽度大于浮动元素的宽度，则浮动元素的宽度将会自动适应内容宽度。如果内容宽度小于浮动元素的宽度，则浮动元素的宽度将会撑满包含框。
+
+3. 多个浮动元素
+
+多个浮动元素可以同时向左或向右移动，直到它们的外边缘碰到包含框或另一个浮动元素的边框为止。
+
+例如：
+
+```
+<div class="box">
+  <div class="float1">浮动元素1</div>
+  <div class="float2">浮动元素2</div>
+  <div class="content">内容元素</div>
+</div>
+```
+
+
+```
+.box {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+
+.float1 {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+}
+
+
+.float2 {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: #0f0;
+}
+
+
+.content {
+  background-color: #00f;
+}
+```
+
+
+上面的代码中，.box元素设置了边框和内边距，.float1和.float2元素设置了浮动属性为left，宽度为100px，高度为100px，背景色分别为红色和绿色。.content元素设置了背景色为蓝色。
+
+当页面加载完成后，.box元素的宽度将会自动适应其包含的内容，而.float1和.float2元素将会同时向左浮动，直到它们的外边缘碰到.content元素的边框为止。
+
+浮动元素的宽度默认是内容宽度，如果内容宽度大于浮动元素的宽度，则浮动元素的宽度将会自动适应内容宽度。如果内容宽度小于浮动元素的宽度，则浮动元素的宽度将会撑满包含框。
+
+4. 父元素高度塌陷
+
+当父元素的高度小于包含浮动元素的高度时，父元素的高度将会塌陷，导致子元素无法正常显示。
+
+例如：
+
+```
+<div class="box">
+  <div class="float">浮动元素</div>
+  <div class="content">内容元素</div>
+</div>
+```
+
+
+```
+.box {  
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 100px; /* 父元素高度为100px */
+}
+
+.float {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+}
+
+.content {
+  background-color: #0f0;
+}
+```
+
+上面的代码中，.box元素设置了边框和内边距，高度为100px，.float元素设置了浮动属性为left，宽度为100px，高度为100px，背景色为红色。.content元素设置了背景色为绿色。
+
+当页面加载完成后，.box元素的高度将会自动适应其包含的内容，而.float元素将会向左浮动，直到它碰到.content元素的边框为止。
+
+由于.box元素的高度为100px，而.float元素的高度为100px，因此.box元素的高度将会塌陷，导致.content元素无法正常显示。
+
+解决方法是给.box元素设置一个足够大的高度，或者将.float元素的高度设置为auto，让它自动适应内容高度。
+
+
+
+
+正常文档流布局：
+
+默认情况下，文档流布局是指文档中的元素按照它们在HTML代码中出现的顺序从上到下排列，从左到右显示。
+
+```
+<div class="box">
+  <div class="float">浮动元素</div>
+  <div class="content">内容元素</div>
+</div>
+```
+
+
+```
+.box {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+
+.float {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+}
+
+
+.content {
+  background-color: #0f0;
+}
+```
+
+
+当页面加载完成后，.box元素的宽度将会自动适应其包含的内容，而.float元素将会向左浮动，直到它碰到.content元素的边框为止。
+
+.content元素将会在.box元素的右边显示，因为.box元素的宽度足够大，可以容纳.content元素。
+
+.float元素的宽度为100px，高度为100px，因此它将会撑满.box元素的高度。
+
+.float元素的背景色为红色，.content元素的背景色为绿色。
+
+
+
+脱离文档流的浮动布局：
+
+通过设置元素的float属性为left或right，将元素从文档流中移除，并使其向左或向右移动，直到它的外边缘碰到包含框或另一个浮动元素的边框为止。
+
+```
+<div class="box">
+  <div class="float">浮动元素</div>
+  <div class="content">内容元素</div>
+</div>
+```
+
+
+```
+.box {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+
+.float {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+}
+
+
+.content {
+  background-color: #0f0;
+}
+```
+
+
+当页面加载完成后，.box元素的宽度将会自动适应其包含的内容，而.float元素将会向左浮动，直到它碰到.content元素的边框为止。
+
+
+.float元素的宽度为100px，高度为100px，因此它将会撑满.box元素的高度。
+
+.float元素的背景色为红色，.content元素的背景色为绿色。
+
+.float元素脱离文档流，并向左移动，直到它碰到.content元素的边框为止。
+
+.content元素将会在.float元素的右边显示，因为.float元素的宽度足够大，可以容纳.content元素。
+
+
+
+
+清除浮动：
+
+clear: 取值;
+
+取值属性：
+
+left：元素不能向左边界靠齐，必须向右边界靠齐。
+
+right：元素不能向右边界靠齐，必须向左边界靠齐。
+
+both：元素不能向左右边界靠齐，必须同时向左右边界靠齐。
+
+none：元素可以向左右边界靠齐。
+
+当一个元素浮动之后，其后的元素将会自动向上移动，直到遇到另一个浮动元素或父元素的边框。
+
+为了避免这种情况，可以给父元素添加一个clearfix类，并设置clear属性为both。
+
+```
+<div class="box clearfix">
+  <div class="float">浮动元素</div>
+  <div class="content">内容元素</div>
+</div>
+```
+
+
+```
+.box {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+
+.float {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+}
+
+
+.content {
+  background-color: #0f0;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+```
+
+
+.clearfix::after设置了一个伪元素，并设置了content为空，display为table，clear为both。
+
+
+.clearfix::after将会在.box元素的最后一个子元素之后添加一个空白元素，并清除浮动。
+
+这样，.box元素的高度将会自动适应其包含的内容，而.float元素将会向左浮动，直到它碰到.content元素的边框为止。
+
+.float元素的宽度为100px，高度为100px，因此它将会撑满.box元素的高度。
+
+.float元素的背景色为红色，.content元素的背景色为绿色。
+
+.float元素脱离文档流，并向左移动，直到它碰到.content元素的边框为止。
+
+.content元素将会在.float元素的右边显示，因为.float元素的宽度足够大，可以容纳.content元素。
+
+
+.clearfix::after将会清除.box元素的浮动，使其后面的元素可以正常显示。

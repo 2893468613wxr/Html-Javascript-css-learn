@@ -1,0 +1,79 @@
+CSS定位布局：   
+
+   
+1. 绝对定位(Absolute Positioning) - absolute
+2. 相对定位(Relative Positioning) - relative
+3. 固定定位(Fixed Positioning) - fixed
+4. 粘性定位(Sticky Positioning) - sticky
+
+通过position属性来设置定位方式，position属性有5个值：
+
+1. static - 默认值，没有定位，元素出现在正常的流中（忽略top, bottom, left, right的设置）。
+2. relative - 相对定位，相对于其正常位置进行定位。
+3. absolute - 绝对定位，相对于最近的已定位的祖先元素进行定位。
+4. fixed - 固定定位，相对于浏览器窗口进行定位。
+5. sticky - 粘性定位，相对于最近的已定位祖先元素，当元素在屏幕范围内时，它会固定在原地，当它越过屏幕范围时，它会向相对定位方向移动。
+
+
+固定定位：fixed定位是相对浏览器窗口进行定位的，即使页面滚动也不会动。
+    position: fixed;
+    top: 像素值;
+    left: 像素值;
+    right: 像素值;
+    bottom: 像素值;
+
+固定定位的元素不会随着页面的滚动而移动，它始终位于浏览器窗口的相同位置。
+
+
+相对定位：relative定位是相对于其正常位置进行定位的。
+    position: relative;
+    top: 像素值;     /* 向上移动 */
+    left: 像素值;    /* 向左移动 */
+    right: 像素值;   /* 向右移动 */
+    bottom: 像素值;  /* 向下移动 */
+
+相对定位的元素不会脱离文档流，它仍然保留其在正常位置的位置。
+
+示例：
+
+HTML代码：
+
+```html
+<div class="box">
+    <p>Hello World!</p>
+</div>
+```
+
+
+CSS代码：
+
+```css
+.box {          
+
+
+绝对定位：absolute定位是相对于最近的已定位的祖先元素进行定位的。
+    position: absolute;
+    top: 像素值;     /* 向上移动 */
+    left: 像素值;    /* 向左移动 */
+    right: 像素值;   /* 向右移动 */
+    bottom: 像素值;  /* 向下移动 */
+
+
+绝对定位的元素脱离文档流，它将不再占据原来的位置，它将根据top, bottom, left, right属性进行定位。
+
+粘性定位：sticky定位是相对于最近的已定位祖先元素，当元素在屏幕范围内时，它会固定在原地，当它越过屏幕范围时，它会向相对定位方向移动。
+    position: sticky;
+    top: 像素值;     /* 向上移动 */
+    left: 像素值;    /* 向左移动 */
+    right: 像素值;   /* 向右移动 */
+    bottom: 像素值;  /* 向下移动 */
+
+粘性定位的元素可以固定在屏幕上，当它在屏幕范围内时，它不会移动，当它越过屏幕范围时，它会向相对定位方向移动。
+
+
+定位模式	            是否脱标	                移动位置	               是否常用
+static 静态定位	            否	                   不能使用边偏移	           很少
+relative 相对定位	        否 (占有位置)	        相对于自身位置移动	        基本单独使用
+absolute绝对定位	        是（不占有位置）	    带有定位的父级	             要和定位父级元素搭配使用
+fixed 固定定位	            是（不占有位置）	    浏览器可视区	            单独使用，不需要父级
+sticky 粘性定位	            否 (占有位置)	        浏览器可视区	            当前阶段少

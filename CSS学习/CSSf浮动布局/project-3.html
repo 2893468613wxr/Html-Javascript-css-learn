@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title></title>
+    <style>
+        /* 父元素设置浮动 */
+        #father {
+            width: 300px;
+            height: 200px;
+            background-color: #0c6a9d;
+            border: 1px solid silver;
+        }
+        /* 子元素样式设置 */
+        #father div {
+            padding: 10px;
+            margin: 15px;
+        }
+        /* son1子元素设置左浮动 */
+        #son1 {
+            background-color: hotpink;
+            float: left;
+        }
+        /* son2子元素设置右浮动 */
+        #son2 {
+
+            background-color: lightblue;
+            float: right;
+        }
+        .clear {
+            clear: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="father">   
+        <div id="son1">box1</div>
+        <div id="son2">box2</div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
