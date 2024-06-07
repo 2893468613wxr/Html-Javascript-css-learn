@@ -130,6 +130,7 @@ a:active {
     }
 
 
-    鼠标图片资源来自：https://www.aigei.com/icon/class/shu_biao/
-
-    
+    鼠标图片资源来自：https://www.aigei.com/icon/class/shu_b
+    td,th {
+      border: 1px solid #ccc;
+    }

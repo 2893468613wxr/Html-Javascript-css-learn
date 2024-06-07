@@ -14,6 +14,24 @@ HTML5表格标签及属性主要包括：
 
 表格属性：
 
+单元格背景颜色：bgcolor
+单元格边框颜色：bordercolor
+单元格边框宽度：border
+单元格内边距：cellpadding
+单元格间距：cellspacing
+单元格合并：colspan、rowspan
+单元格宽度：width
+单元格高度：height
+单元格水平对齐方式：align
+单元格垂直对齐方式：valign
+表格宽度：width
+表格高度：height
+表格水平对齐方式：align
+表格垂直对齐方式：valign
+表格背景颜色：bgcolor
+表格背景图片：background
+表格边框颜色：bordercolor
+
 border：设置表格边框宽度
 cellpadding：设置单元格内边距
 cellspacing：设置单元格间距
